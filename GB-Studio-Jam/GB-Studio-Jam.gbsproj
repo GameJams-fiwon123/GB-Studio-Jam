@@ -2,16 +2,34 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 100,
-        "startX": 9,
-        "startY": 9,
+        "worldScrollX": 445,
+        "worldScrollY": 317,
+        "zoom": 250,
+        "customColorsWhite": "E8F8E0",
+        "customColorsLight": "B0F088",
+        "customColorsDark": "509878",
+        "customColorsBlack": "202850",
+        "startX": 12,
+        "startY": 8,
         "startDirection": "down",
-        "startSceneId": "",
-        "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
+        "startSceneId": "8c455c81-1647-423c-976a-6f77051c618a",
+        "playerSpriteSheetId": "ee85148a-33dc-4370-985c-1dee6e743ace",
+        "startAnimSpeed": "2"
     },
-    "scenes": [],
+    "scenes": [
+        {
+            "name": "Scene 1",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "8c455c81-1647-423c-976a-6f77051c618a",
+            "x": 240,
+            "y": 212,
+            "actors": [],
+            "triggers": []
+        }
+    ],
     "_version": "1.2.0",
     "author": "Felipe Inoue",
     "name": "GB-Studio-Jam",
@@ -25,17 +43,33 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1561399228204
+            "_v": 1579360260707
         }
     ],
     "spriteSheets": [
+        {
+            "id": "34adcb39-f14d-4a86-9052-f6eee15e0122",
+            "name": "Buraco_16x16",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Buraco_16x16.png",
+            "_v": 1579360419517
+        },
+        {
+            "id": "8100cfdd-4deb-4d1a-8aa3-f0a894469493",
+            "name": "Parede_16x16",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Parede_16x16.png",
+            "_v": 1579360419512
+        },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
             "name": "actor",
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1561399228204
+            "_v": 1579360260707
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -43,7 +77,71 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1561399228204
+            "_v": 1579360260707
+        },
+        {
+            "id": "524499c3-b44a-40d4-9f0a-f4fb60b45a74",
+            "name": "barata_16x16",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "barata_16x16.png",
+            "_v": 1579360419497
+        },
+        {
+            "id": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
+            "name": "morcego_16x16",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "morcego_16x16.png",
+            "_v": 1579360419493
+        },
+        {
+            "id": "a9bb9b11-ef78-4de5-9544-7dbdad820787",
+            "name": "porta_aberta_16x16",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "porta_aberta_16x16.png",
+            "_v": 1579360419515
+        },
+        {
+            "id": "d64579dd-9176-4adb-95b6-9d62507a86f1",
+            "name": "porta_fechada_16x16",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "porta_fechada_16x16.png",
+            "_v": 1579360419516
+        },
+        {
+            "id": "cc3f4208-b6fd-48f8-b448-b2fb2c115aa6",
+            "name": "quina_16x16",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "quina_16x16.png",
+            "_v": 1579360419514
+        },
+        {
+            "id": "b9b32e9b-96b1-4918-9fb4-865c05edbe26",
+            "name": "rato_andando_lado_16x16",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "rato_andando_lado_16x16.png",
+            "_v": 1579360419496
+        },
+        {
+            "id": "2d3380a9-fed2-42e8-98f4-879c76de31f4",
+            "name": "rato_animacao_costas_16x16",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "rato_animacao_costas_16x16.png",
+            "_v": 1579360419601
+        },
+        {
+            "id": "ee85148a-33dc-4370-985c-1dee6e743ace",
+            "name": "rato_animacao_frente_16x16",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "rato_animacao_frente_16x16.png",
+            "_v": 1579360718977
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -51,7 +149,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1561399228204
+            "_v": 1579360260707
         }
     ],
     "music": [
@@ -59,7 +157,14 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1561399228201
+            "_v": 1579360260701
+        }
+    ],
+    "customEvents": [
+        {
+            "id": "bee6a2cb-d732-458d-9099-9eecfcc73b8b",
+            "variables": {},
+            "actors": {}
         }
     ]
 }
