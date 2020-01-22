@@ -2,14 +2,14 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 352,
-        "zoom": 125,
+        "worldScrollX": 1670,
+        "worldScrollY": 1200,
+        "zoom": 325,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 0,
+        "startX": 1,
         "startY": 0,
         "startDirection": "down",
         "startSceneId": "bda009cc-54ae-4932-bb07-77e920fe97fd",
@@ -41,7 +41,8 @@
                     "id": "70e50b66-3684-4a7c-a5c0-d111725de606",
                     "command": "EVENT_SET_INPUT_SCRIPT",
                     "args": {
-                        "input": "a"
+                        "input": "start",
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -51,7 +52,8 @@
                                 "args": {
                                     "variable": "L0",
                                     "trueText": "Iniciar",
-                                    "falseText": "Sair"
+                                    "falseText": "Sair",
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -64,12 +66,21 @@
                                 "children": {
                                     "true": [
                                         {
+                                            "id": "12dae4f1-3f2b-4e51-8b02-17b3f3afa540",
+                                            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                                            "args": {
+                                                "input": [
+                                                    "start"
+                                                ]
+                                            }
+                                        },
+                                        {
                                             "id": "e03bcde3-eadc-4f81-8445-a3e5a340c372",
                                             "command": "EVENT_SWITCH_SCENE",
                                             "args": {
                                                 "sceneId": "54604311-8f1f-49df-bb2a-478c62efb2d7",
                                                 "x": 9,
-                                                "y": 8,
+                                                "y": 7,
                                                 "direction": "left",
                                                 "fadeSpeed": "2"
                                             }
@@ -105,10 +116,56 @@
             "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
             "id": "65d70be4-ee71-4a89-b0be-0986bf3f635d",
-            "x": 398.6857142857148,
-            "y": 267.3333333333333,
+            "x": 399.30109890109946,
+            "y": 271.0256410256411,
             "actors": [
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -119,36 +176,81 @@
                     "id": "103ac6a6-f99d-472b-88e9-a10767365aed",
                     "x": 18,
                     "y": 9,
-                    "animate": false
-                }
-            ],
-            "triggers": [
-                {
-                    "trigger": "walk",
-                    "id": "e7ebc705-4ce2-4626-8dcf-4d6e04b4f46d",
-                    "x": 19,
-                    "y": 8,
-                    "width": 1,
-                    "height": 1,
+                    "animate": false,
+                    "name": "DoorRight",
                     "script": [
                         {
-                            "id": "d3667c55-4549-4f6a-8ea3-2a46bb808704",
-                            "command": "EVENT_SWITCH_SCENE",
+                            "id": "127fc0a1-83a0-422d-8690-635a3e4eb5c7",
+                            "command": "EVENT_TEXT",
                             "args": {
-                                "sceneId": "e2c65bbd-9db5-40f9-a2d8-64956da1da70",
-                                "x": 1,
-                                "y": 8,
-                                "direction": "right",
-                                "fadeSpeed": "2"
+                                "text": [
+                                    "Sala 02121109?"
+                                ],
+                                "avatarId": ""
                             }
                         },
                         {
-                            "id": "6432e348-5389-46c5-b15e-6823e1e14e56",
+                            "id": "fafbc00c-fc12-491d-a106-199a030a0669",
+                            "command": "EVENT_MENU",
+                            "args": {
+                                "variable": "L0",
+                                "items": 5,
+                                "option1": "Cera",
+                                "option2": "",
+                                "option3": "",
+                                "option4": "",
+                                "option5": "",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": true,
+                                "layout": "dialogue"
+                            }
+                        },
+                        {
+                            "id": "17958645-a4e1-4d7f-ad87-7b7e75e40bb6",
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "L0",
+                                "operator": "==",
+                                "comparator": 1,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "3ebaf9dd-dda8-46db-8118-b963f7c1e40f",
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "e2c65bbd-9db5-40f9-a2d8-64956da1da70",
+                                            "x": 2,
+                                            "y": 9,
+                                            "direction": "right",
+                                            "fadeSpeed": "2",
+                                            "__collapse": false
+                                        }
+                                    },
+                                    {
+                                        "id": "67537758-5475-4418-83f7-b907bcf01fab",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "2c333bb1-1321-481e-8503-c232df99b436",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "0519c85a-5e13-45e9-8d63-01510079a13e",
                             "command": "EVENT_END"
                         }
                     ]
                 }
             ],
+            "triggers": [],
             "script": [
                 {
                     "id": "6fcf3a7d-2b41-4624-bcb0-957544ccc5f2",
@@ -169,10 +271,56 @@
             "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                128,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                249,
+                255,
+                255,
+                255
+            ],
             "id": "e2c65bbd-9db5-40f9-a2d8-64956da1da70",
-            "x": 618.476190476191,
-            "y": 279.3333333333332,
+            "x": 616.322344322345,
+            "y": 271.8461538461537,
             "actors": [
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -184,7 +332,78 @@
                     "x": 9,
                     "y": 17,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorDown",
+                    "script": [
+                        {
+                            "id": "781b1a02-152a-4437-994a-f33ec8675c6e",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Sala 02121109?"
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "ce9bc2a0-235b-46e6-98f1-12530baac7ab",
+                            "command": "EVENT_MENU",
+                            "args": {
+                                "variable": "L0",
+                                "items": 5,
+                                "option1": "Cera",
+                                "option2": "",
+                                "option3": "",
+                                "option4": "",
+                                "option5": "",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": true,
+                                "layout": "dialogue"
+                            }
+                        },
+                        {
+                            "id": "363a4190-1c2a-440c-9d36-669093a12eff",
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "L0",
+                                "operator": "==",
+                                "comparator": 1,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "1de423d2-2a84-4b04-9b53-bc5edadafd2d",
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "f160d0c6-4d0f-40f6-9aa4-5c62e171d89f",
+                                            "x": 9,
+                                            "y": 2,
+                                            "direction": "down",
+                                            "fadeSpeed": "2",
+                                            "__collapse": false
+                                        }
+                                    },
+                                    {
+                                        "id": "3f1624c8-0f94-4308-bc19-917e9dc04b1c",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "c6138743-4319-4909-b180-a0a6b7ae8632",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "1cfb85b3-c4a5-40a6-b7ff-f249674f422a",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -196,7 +415,8 @@
                     "x": 18,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorRight"
                 },
                 {
                     "spriteSheetId": "2e4fa395-5fa4-4963-bcba-e70334124474",
@@ -207,19 +427,20 @@
                     "id": "483465b8-65cd-4344-abb6-4717bd76db73",
                     "x": 14,
                     "y": 1
-                }
-            ],
-            "triggers": [
+                },
                 {
-                    "trigger": "walk",
-                    "id": "8db05e33-5f0b-4571-b946-74fe53e3a5d9",
-                    "x": 9,
-                    "y": 17,
-                    "width": 2,
-                    "height": 1,
+                    "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
+                    "movementType": "faceInteraction",
+                    "direction": "right",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "269cec52-2170-43db-850c-04b7d84e0efd",
+                    "x": 0,
+                    "y": 9,
+                    "name": "DoorLeft",
                     "script": [
                         {
-                            "id": "4c5e4ad7-74e2-4f9b-84e8-08e3ec84f005",
+                            "id": "cf0727fe-f087-4a85-a467-59e3b14d2322",
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
@@ -229,79 +450,67 @@
                             }
                         },
                         {
-                            "id": "c8acbb2d-c3f2-45c2-a53a-8b806388f610",
-                            "command": "EVENT_CHOICE",
+                            "id": "44986f79-324e-4347-ab07-1628b91aee97",
+                            "command": "EVENT_MENU",
                             "args": {
                                 "variable": "L0",
-                                "trueText": "Cera",
-                                "falseText": "Outro"
+                                "items": 5,
+                                "option1": "Cera",
+                                "option2": "",
+                                "option3": "",
+                                "option4": "",
+                                "option5": "",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": true,
+                                "layout": "dialogue"
                             }
                         },
                         {
-                            "id": "8cf2ba55-09be-4a42-bbb5-e6e27e6371ac",
-                            "command": "EVENT_IF_TRUE",
+                            "id": "34270dca-217f-46d2-a413-0e4147e7f29d",
+                            "command": "EVENT_IF_VALUE",
                             "args": {
                                 "variable": "L0",
+                                "operator": "==",
+                                "comparator": 1,
                                 "__collapseElse": false
                             },
                             "children": {
                                 "true": [
                                     {
-                                        "id": "44d0c1b6-e550-44f7-a30f-e92b407a6f45",
+                                        "id": "a79985fa-3f61-456a-a5a9-e7f7152ff1db",
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
-                                            "sceneId": "f160d0c6-4d0f-40f6-9aa4-5c62e171d89f",
-                                            "x": 8,
-                                            "y": 0,
-                                            "direction": "down",
-                                            "fadeSpeed": "2"
+                                            "sceneId": "65d70be4-ee71-4a89-b0be-0986bf3f635d",
+                                            "x": 16,
+                                            "y": 9,
+                                            "direction": "left",
+                                            "fadeSpeed": "2",
+                                            "__collapse": false
                                         }
                                     },
                                     {
-                                        "id": "9c2bb2a8-be16-4f37-b637-dd63d7875e62",
+                                        "id": "733fccf9-2d6c-4034-bf2e-df6bfbf24fc4",
                                         "command": "EVENT_END"
                                     }
                                 ],
                                 "false": [
                                     {
-                                        "id": "b1bc9802-d52e-4e68-a335-0b0d9e7c1768",
+                                        "id": "3302a84e-8f4c-4208-8939-8c18ac28e03b",
                                         "command": "EVENT_END"
                                     }
                                 ]
                             }
                         },
                         {
-                            "id": "ba55d500-933d-46fe-85d1-82da09714d66",
-                            "command": "EVENT_END"
-                        }
-                    ]
-                },
-                {
-                    "trigger": "walk",
-                    "id": "3d665f24-2754-4ac9-a817-6f1e3bfb8872",
-                    "x": 0,
-                    "y": 8,
-                    "width": 1,
-                    "height": 1,
-                    "script": [
-                        {
-                            "id": "53f98d4f-fef5-4cc4-8e83-20ba08165395",
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "65d70be4-ee71-4a89-b0be-0986bf3f635d",
-                                "x": 17,
-                                "y": 8,
-                                "direction": "left",
-                                "fadeSpeed": "2"
-                            }
-                        },
-                        {
-                            "id": "c6989067-f85f-47b1-bc98-ebe874960bd9",
+                            "id": "6043c56d-2552-4b0b-8caf-13d14d367f59",
                             "command": "EVENT_END"
                         }
                     ]
                 }
             ],
+            "triggers": [],
             "__type": "scene"
         },
         {
@@ -309,7 +518,53 @@
             "backgroundId": "d7105c2a-cbe9-4043-b168-55909ba359b9",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                28,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                51,
+                192,
+                60,
+                3,
+                204,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                249,
+                255,
+                255,
+                255
+            ],
             "id": "54604311-8f1f-49df-bb2a-478c62efb2d7",
             "x": 810.7619047619049,
             "y": 271.5238095238096,
@@ -351,7 +606,8 @@
                                 "option7": "",
                                 "option8": "",
                                 "cancelOnB": true,
-                                "layout": "dialogue"
+                                "layout": "dialogue",
+                                "__collapse": false
                             }
                         },
                         {
@@ -361,7 +617,8 @@
                                 "variable": "L0",
                                 "operator": "==",
                                 "comparator": 2,
-                                "__collapseElse": false
+                                "__collapseElse": false,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -370,7 +627,7 @@
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "e2c65bbd-9db5-40f9-a2d8-64956da1da70",
-                                            "x": 17,
+                                            "x": 16,
                                             "y": 9,
                                             "direction": "left",
                                             "fadeSpeed": "2"
@@ -390,10 +647,20 @@
                             }
                         },
                         {
+                            "id": "aec3866c-1642-4ebe-9ea2-11b1b69025f9",
+                            "command": "EVENT_ACTOR_SET_FRAME",
+                            "args": {
+                                "actorId": "bb66b674-e2b1-4e90-90c6-d3c7c3980f32",
+                                "frame": 1,
+                                "__collapse": false
+                            }
+                        },
+                        {
                             "id": "ca3e6d61-f88b-44e8-bb28-240873311a10",
                             "command": "EVENT_END"
                         }
-                    ]
+                    ],
+                    "name": "DoorLeft"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -405,30 +672,11 @@
                     "x": 9,
                     "y": 17,
                     "animate": false,
-                    "__type": "actor"
-                },
-                {
-                    "spriteSheetId": "0d34ed82-a795-4bf1-a461-5b679e096bd6",
-                    "movementType": "randomFace",
-                    "direction": "left",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
-                    "id": "82a043a4-b60b-40ab-84c2-f66d84888fd6",
-                    "x": 15,
-                    "y": 14
-                }
-            ],
-            "triggers": [
-                {
-                    "trigger": "walk",
-                    "id": "b86435bf-7d4d-4aa2-b9d6-cd6dab6931ce",
-                    "x": 9,
-                    "y": 17,
-                    "width": 2,
-                    "height": 1,
+                    "__type": "actor",
+                    "name": "DoorDown",
                     "script": [
                         {
-                            "id": "bd9a5d98-65b2-4894-8eeb-af63772f09f4",
+                            "id": "76f196f0-3926-47b0-b0fd-6f8e5d4f2da5",
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
@@ -438,54 +686,103 @@
                             }
                         },
                         {
-                            "id": "3d0a478d-c729-49f7-a8db-5043097d80b5",
-                            "command": "EVENT_CHOICE",
+                            "id": "011220a2-6be9-446e-991e-1fc369645a11",
+                            "command": "EVENT_MENU",
                             "args": {
                                 "variable": "L0",
-                                "trueText": "2",
-                                "falseText": "Outro"
+                                "items": 5,
+                                "option1": "",
+                                "option2": "",
+                                "option3": "",
+                                "option4": "2",
+                                "option5": "",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": true,
+                                "layout": "dialogue",
+                                "__collapse": false
                             }
                         },
                         {
-                            "id": "042a83a1-d52c-4854-bea7-f34638155309",
-                            "command": "EVENT_IF_TRUE",
+                            "id": "03a473a2-a9d9-4206-bf26-ac06c30044db",
+                            "command": "EVENT_IF_VALUE",
                             "args": {
                                 "variable": "L0",
-                                "__collapseElse": false
+                                "operator": "==",
+                                "comparator": 4,
+                                "__collapseElse": false,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
                                     {
-                                        "id": "dacc0ca4-35cd-4d59-a2b3-5f3b24ac7ef8",
+                                        "id": "df9de647-e994-4877-9583-44d17bc67bb4",
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "5c144245-bd8f-403d-9e1c-777055bb426e",
                                             "x": 8,
-                                            "y": 1,
+                                            "y": 2,
                                             "direction": "down",
                                             "fadeSpeed": "2"
                                         }
                                     },
                                     {
-                                        "id": "3a0e6133-a816-4f73-bbb5-8ae397de11d0",
+                                        "id": "9ed9f994-cedd-4d7f-a0f0-b66438e19e9e",
                                         "command": "EVENT_END"
                                     }
                                 ],
                                 "false": [
                                     {
-                                        "id": "83301caf-6a67-4ee0-8162-b3538b96cdc1",
+                                        "id": "66a2b4f0-cce4-4a40-9d6f-adcfe468bb84",
                                         "command": "EVENT_END"
                                     }
                                 ]
                             }
                         },
                         {
-                            "id": "e6a5a560-3654-4f61-bef7-101215dbcaa6",
+                            "id": "8d30a0e0-dd4b-4d46-943e-22d8d193d3e7",
+                            "command": "EVENT_ACTOR_SET_FRAME",
+                            "args": {
+                                "actorId": "bb66b674-e2b1-4e90-90c6-d3c7c3980f32",
+                                "frame": 1,
+                                "__collapse": false
+                            }
+                        },
+                        {
+                            "id": "4324c9ce-d1e8-4fbb-a847-81f7a6738a4a",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "spriteSheetId": "0d34ed82-a795-4bf1-a461-5b679e096bd6",
+                    "movementType": "randomFace",
+                    "direction": "left",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "82a043a4-b60b-40ab-84c2-f66d84888fd6",
+                    "x": 15,
+                    "y": 14,
+                    "script": [
+                        {
+                            "id": "41ece576-66dd-4cf9-8929-7423b5356082",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Olá, eu sou a\nmosca Gasmi. "
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "b7bb48e6-e088-4b2a-be6d-79bf6f37baa8",
                             "command": "EVENT_END"
                         }
                     ]
                 }
             ],
+            "triggers": [],
             "__type": "scene"
         },
         {
@@ -493,7 +790,53 @@
             "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
             "id": "95cd7b3e-3de2-424c-b125-bf93acb00acd",
             "x": 1022.1904761904764,
             "y": 273.0476190476191,
@@ -508,7 +851,8 @@
                     "x": 9,
                     "y": 17,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorDown"
                 }
             ],
             "triggers": [
@@ -525,7 +869,7 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "114abfa0-022a-44d7-8a92-e2bf2d617357",
-                                "x": 8,
+                                "x": 9,
                                 "y": 2,
                                 "direction": "down",
                                 "fadeSpeed": "2"
@@ -545,7 +889,53 @@
             "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                251,
+                255,
+                159,
+                255
+            ],
             "id": "62a5317c-4f68-4199-b932-a2d66c9fe595",
             "x": 404.26666666666665,
             "y": 457.33333333333326,
@@ -558,9 +948,10 @@
                     "animSpeed": "3",
                     "id": "f51f6a76-dad2-475e-b0b2-496b8b440ee1",
                     "x": 18,
-                    "y": 10,
+                    "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorRight"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -572,7 +963,8 @@
                     "x": 9,
                     "y": 17,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorDown"
                 },
                 {
                     "spriteSheetId": "ed6b8755-9771-4dff-b4bb-18ec69b22e53",
@@ -627,7 +1019,7 @@
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "f160d0c6-4d0f-40f6-9aa4-5c62e171d89f",
-                                            "x": 0,
+                                            "x": 2,
                                             "y": 8,
                                             "direction": "right",
                                             "fadeSpeed": "2"
@@ -660,7 +1052,53 @@
             "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                253,
+                255,
+                223,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
             "id": "f160d0c6-4d0f-40f6-9aa4-5c62e171d89f",
             "x": 616.6666666666669,
             "y": 464.6666666666665,
@@ -675,7 +1113,24 @@
                     "x": 9,
                     "y": 1,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorUp",
+                    "script": [
+                        {
+                            "id": "0f852d05-2b0c-4e68-baa5-a8f1ccfb35f6",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Porta não pode ser\naberta."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "c6d06829-cbfd-43e1-b32d-40e1a6e70eff",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -687,7 +1142,8 @@
                     "x": 18,
                     "y": 8,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorRight"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -699,7 +1155,8 @@
                     "x": 0,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorLeft"
                 },
                 {
                     "spriteSheetId": "3b85d30d-eeea-4495-8b5e-0b19c7ff6cd5",
@@ -793,7 +1250,53 @@
             "backgroundId": "b7471259-e7d4-47f2-9e12-8eab3e9031a7",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                128,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
             "id": "5c144245-bd8f-403d-9e1c-777055bb426e",
             "x": 817.6190476190478,
             "y": 459.33333333333337,
@@ -805,10 +1308,11 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "7051252e-13d4-435c-9b83-40e146996b7d",
-                    "x": 10,
+                    "x": 8,
                     "y": 1,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorUp"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -820,7 +1324,8 @@
                     "x": 18,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorRight"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -832,7 +1337,8 @@
                     "x": 0,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorLeft"
                 }
             ],
             "triggers": [
@@ -910,10 +1416,56 @@
             "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
             "id": "114abfa0-022a-44d7-8a92-e2bf2d617357",
-            "x": 1033.9047619047622,
-            "y": 462.6666666666666,
+            "x": 1021.1047619047624,
+            "y": 461.86666666666656,
             "actors": [
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -922,10 +1474,11 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "07a1b6ed-0424-47b8-b4b8-b8de4ca098ee",
-                    "x": 10,
+                    "x": 9,
                     "y": 1,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorUp"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -937,7 +1490,8 @@
                     "x": 10,
                     "y": 17,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorDown"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -949,7 +1503,8 @@
                     "x": 0,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorLeft"
                 },
                 {
                     "spriteSheetId": "91581f70-b831-40de-b454-09594827884e",
@@ -960,6 +1515,16 @@
                     "id": "048e0f49-0b08-4ccd-a2d0-e2e1b5e5e782",
                     "x": 15,
                     "y": 16
+                },
+                {
+                    "spriteSheetId": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "dc11f67d-92cd-40cb-87cd-4b2fcc3cb37d",
+                    "x": 15,
+                    "y": 7
                 }
             ],
             "triggers": [
@@ -1005,7 +1570,7 @@
                                         "args": {
                                             "sceneId": "95cd7b3e-3de2-424c-b125-bf93acb00acd",
                                             "x": 9,
-                                            "y": 14,
+                                            "y": 15,
                                             "direction": "up",
                                             "fadeSpeed": "2"
                                         }
@@ -1103,7 +1668,53 @@
             "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
             "id": "9bb8170c-c9e5-44ae-a22d-ca602590c802",
             "x": 407.3333333333335,
             "y": 654,
@@ -1118,7 +1729,8 @@
                     "x": 18,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorRight"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1130,7 +1742,8 @@
                     "x": 9,
                     "y": 17,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorDown"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1142,7 +1755,8 @@
                     "x": 8,
                     "y": 1,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorUp"
                 },
                 {
                     "spriteSheetId": "285bc766-d9a0-450b-bd11-bd56722a571c",
@@ -1199,7 +1813,7 @@
                                         "args": {
                                             "sceneId": "27c53b0b-fd83-4c7e-b636-a54b73d66d9b",
                                             "x": 8,
-                                            "y": 0,
+                                            "y": 2,
                                             "direction": "down",
                                             "fadeSpeed": "2"
                                         }
@@ -1265,7 +1879,7 @@
                                         "args": {
                                             "sceneId": "62a5317c-4f68-4199-b932-a2d66c9fe595",
                                             "x": 9,
-                                            "y": 16,
+                                            "y": 15,
                                             "direction": "up",
                                             "fadeSpeed": "2"
                                         }
@@ -1312,7 +1926,53 @@
             "backgroundId": "2a0fa7fc-7c21-4484-bf86-79a4de5cfeec",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                192,
+                60,
+                0,
+                204,
+                51,
+                0,
+                60,
+                3,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                195,
+                0,
+                60,
+                12,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                255,
+                255,
+                207,
+                255
+            ],
             "id": "f8144974-9a2f-4210-9c0c-83e92c7a859a",
             "x": 613.3333333333326,
             "y": 652.0000000000003,
@@ -1327,7 +1987,8 @@
                     "x": 9,
                     "y": 17,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorDown"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1339,7 +2000,8 @@
                     "x": 18,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorRight"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1351,7 +2013,8 @@
                     "x": 0,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorLeft"
                 },
                 {
                     "spriteSheetId": "e7e1d9d5-c762-4416-8cb9-5d0746da7c09",
@@ -1406,8 +2069,8 @@
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "9bb8170c-c9e5-44ae-a22d-ca602590c802",
-                                            "x": 15,
-                                            "y": 7,
+                                            "x": 16,
+                                            "y": 9,
                                             "direction": "left",
                                             "fadeSpeed": "2"
                                         }
@@ -1439,7 +2102,53 @@
             "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
             "id": "055fe117-f6b6-461a-8ec6-4737981c0db3",
             "x": 812.6666666666667,
             "y": 652.6666666666669,
@@ -1454,7 +2163,8 @@
                     "x": 10,
                     "y": 17,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorDown"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1466,7 +2176,8 @@
                     "x": 0,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorLeft"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1478,7 +2189,8 @@
                     "x": 18,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorRight"
                 },
                 {
                     "spriteSheetId": "59f349a2-7e07-4d11-8234-1a3cddac9258",
@@ -1533,8 +2245,8 @@
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "e5da5ce7-8e11-49b2-83f2-781d86abc7c4",
-                                            "x": 8,
-                                            "y": 3,
+                                            "x": 9,
+                                            "y": 2,
                                             "direction": "down",
                                             "fadeSpeed": "2"
                                         }
@@ -1600,8 +2312,8 @@
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "f8144974-9a2f-4210-9c0c-83e92c7a859a",
-                                            "x": 15,
-                                            "y": 8,
+                                            "x": 16,
+                                            "y": 9,
                                             "direction": "left",
                                             "fadeSpeed": "2"
                                         }
@@ -1633,7 +2345,53 @@
             "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                1,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                249,
+                255,
+                191,
+                255
+            ],
             "id": "19dc7e74-9afa-452d-aa46-a1aff5d1abbb",
             "x": 1018.7619047619049,
             "y": 656.5714285714287,
@@ -1648,7 +2406,8 @@
                     "x": 10,
                     "y": 1,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorUp"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1657,10 +2416,11 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "9051e7ba-befe-4790-a4f2-2f94c02ac51e",
-                    "x": 10,
+                    "x": 9,
                     "y": 17,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorDown"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1670,9 +2430,10 @@
                     "animSpeed": "3",
                     "id": "c8ae4fe2-a28d-4c7f-9ac6-6892164745e3",
                     "x": 0,
-                    "y": 10,
+                    "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorLeft"
                 },
                 {
                     "spriteSheetId": "d47c6077-035a-4abb-a40e-ab2fbf144f0a",
@@ -1728,7 +2489,7 @@
                                         "args": {
                                             "sceneId": "055fe117-f6b6-461a-8ec6-4737981c0db3",
                                             "x": 16,
-                                            "y": 6,
+                                            "y": 8,
                                             "direction": "left",
                                             "fadeSpeed": "2"
                                         }
@@ -1760,7 +2521,53 @@
             "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                252,
+                255,
+                223,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
             "id": "27c53b0b-fd83-4c7e-b636-a54b73d66d9b",
             "x": 419.3333333333334,
             "y": 839.9999999999998,
@@ -1775,7 +2582,8 @@
                     "x": 8,
                     "y": 1,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorUp"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1787,7 +2595,8 @@
                     "x": 18,
                     "y": 10,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorRight"
                 },
                 {
                     "spriteSheetId": "066d584f-17e4-4e3e-8881-ed2ab7b74a63",
@@ -1842,7 +2651,7 @@
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "26fc8d95-1946-4d41-8a37-530ae5b75786",
-                                            "x": 0,
+                                            "x": 2,
                                             "y": 9,
                                             "direction": "right",
                                             "fadeSpeed": "2"
@@ -1875,7 +2684,53 @@
             "backgroundId": "62f62e44-6d4b-43ff-9fb5-15c942914816",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                28,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
             "id": "26fc8d95-1946-4d41-8a37-530ae5b75786",
             "x": 614.9999999999998,
             "y": 844.666666666667,
@@ -1888,7 +2743,8 @@
                     "animSpeed": "3",
                     "id": "db7ffe6e-1a70-4f31-a886-112c4aaf2490",
                     "x": 10,
-                    "y": 17
+                    "y": 17,
+                    "name": "DoorDown"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1900,7 +2756,8 @@
                     "x": 0,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorLeft"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1912,7 +2769,8 @@
                     "x": 18,
                     "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorRight"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -1924,7 +2782,8 @@
                     "x": 10,
                     "y": 1,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorUp"
                 },
                 {
                     "spriteSheetId": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
@@ -1933,7 +2792,7 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "c1fd1513-bee5-43a3-9bb6-e78021c077d2",
-                    "x": 15,
+                    "x": 3,
                     "y": 13
                 }
             ],
@@ -1980,8 +2839,8 @@
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "f8144974-9a2f-4210-9c0c-83e92c7a859a",
-                                            "x": 8,
-                                            "y": 17,
+                                            "x": 9,
+                                            "y": 15,
                                             "direction": "up",
                                             "fadeSpeed": "2"
                                         }
@@ -2013,7 +2872,53 @@
             "backgroundId": "f8987c61-ea7e-4c5b-a537-05163fc5b778",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                63,
+                0,
+                240,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
             "id": "e5da5ce7-8e11-49b2-83f2-781d86abc7c4",
             "x": 813.3333333333336,
             "y": 838.666666666667,
@@ -2026,9 +2931,10 @@
                     "animSpeed": "3",
                     "id": "32119fab-aec3-42f7-a583-9a9d45d7fcef",
                     "x": 18,
-                    "y": 10,
+                    "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorRight"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -2037,10 +2943,11 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "d62345aa-2387-42d1-b711-a8a325c61543",
-                    "x": 10,
+                    "x": 9,
                     "y": 1,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorUp"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -2050,9 +2957,10 @@
                     "animSpeed": "3",
                     "id": "81095019-f109-440e-aba5-2a134e93472e",
                     "x": 0,
-                    "y": 10,
+                    "y": 9,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorLeft"
                 },
                 {
                     "spriteSheetId": "ee6455e3-0bb4-494e-b980-cc8a43d506d6",
@@ -2063,6 +2971,16 @@
                     "id": "cd17d082-ab35-4e27-a844-8b5edbf95205",
                     "x": 15,
                     "y": 5
+                },
+                {
+                    "spriteSheetId": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "4ce46b40-203e-47b9-b14d-7f20bdc18975",
+                    "x": 7,
+                    "y": 12
                 }
             ],
             "triggers": [
@@ -2108,7 +3026,7 @@
                                         "args": {
                                             "sceneId": "26fc8d95-1946-4d41-8a37-530ae5b75786",
                                             "x": 16,
-                                            "y": 8,
+                                            "y": 9,
                                             "direction": "left",
                                             "fadeSpeed": "2"
                                         }
@@ -2173,8 +3091,8 @@
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "f491d0f3-648a-4520-8294-54f84083e6c6",
-                                            "x": 0,
-                                            "y": 8,
+                                            "x": 2,
+                                            "y": 10,
                                             "direction": "right",
                                             "fadeSpeed": "2"
                                         }
@@ -2206,7 +3124,53 @@
             "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                255,
+                255,
+                255,
+                255,
+                255,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                3,
+                0,
+                60,
+                0,
+                192,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
             "id": "f491d0f3-648a-4520-8294-54f84083e6c6",
             "x": 1014.6666666666667,
             "y": 842.6666666666669,
@@ -2218,10 +3182,11 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "8d439adc-1818-4a3a-a3e4-f7d27dc918c4",
-                    "x": 10,
+                    "x": 9,
                     "y": 1,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorUp"
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -2233,7 +3198,8 @@
                     "x": 0,
                     "y": 10,
                     "animate": false,
-                    "__type": "actor"
+                    "__type": "actor",
+                    "name": "DoorLeft"
                 },
                 {
                     "spriteSheetId": "fb8a29a6-2813-46bf-9bac-c7d2a200d7ec",
@@ -2261,7 +3227,7 @@
                             "args": {
                                 "sceneId": "19dc7e74-9afa-452d-aa46-a1aff5d1abbb",
                                 "x": 9,
-                                "y": 16,
+                                "y": 15,
                                 "direction": "up",
                                 "fadeSpeed": "2"
                             }
@@ -2306,7 +3272,7 @@
                     "command": "EVENT_SWITCH_SCENE",
                     "args": {
                         "sceneId": "1bdaccca-09f2-4f33-a52b-9c8d2e893e8e",
-                        "x": 0,
+                        "x": 1,
                         "y": 0,
                         "direction": "down",
                         "fadeSpeed": "2"
@@ -2329,7 +3295,7 @@
         },
         {
             "id": "0",
-            "name": "X"
+            "name": "started"
         },
         {
             "id": "1",
@@ -2370,6 +3336,10 @@
         {
             "id": "9",
             "name": "letter5"
+        },
+        {
+            "id": "bcd17b49-25ac-410a-a2b6-6ca4219c2c24__L0",
+            "name": "local0"
         }
     ],
     "backgrounds": [
@@ -2706,11 +3676,5 @@
             "_v": 1579651056170
         }
     ],
-    "customEvents": [
-        {
-            "id": "e8abeccc-ed91-44cf-88f1-f05948053a6d",
-            "variables": {},
-            "actors": {}
-        }
-    ]
+    "customEvents": []
 }
