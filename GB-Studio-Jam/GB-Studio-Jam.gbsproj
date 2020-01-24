@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 379,
+        "worldScrollX": 219,
+        "worldScrollY": 641,
         "zoom": 125,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -300,6 +300,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "e86d73fc-c612-495e-b41f-3a306e6e954f",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "8d59887a-319d-494a-a595-d9046404d713",
                                                                 "command": "EVENT_END"
                                                             }
@@ -374,6 +384,34 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "spriteSheetId": "4e93ef72-5294-44d3-953f-84bfce0eea49",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "f278f43f-c9af-4c66-ac52-95489dfcd343",
+                    "x": 9,
+                    "y": 1,
+                    "script": [
+                        {
+                            "id": "95dbb65a-7c9c-49dc-a5d3-847bd6b27f2f",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Credits",
+                                    "Euler Moises",
+                                    "Felipe Inoue"
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "2a13c74f-8de4-4582-814b-4258a969d2c0",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ],
             "triggers": [
@@ -443,7 +481,7 @@
         },
         {
             "name": "Room 2",
-            "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
+            "backgroundId": "9467a840-ab34-4261-b359-85941b91934f",
             "width": 20,
             "height": 18,
             "collisions": [
@@ -458,10 +496,10 @@
                 0,
                 192,
                 3,
-                0,
+                48,
                 60,
                 0,
-                192,
+                195,
                 3,
                 0,
                 60,
@@ -558,7 +596,7 @@
                                             "operator": "==",
                                             "comparator": 1,
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -588,6 +626,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "7bab87ea-482c-4481-a0d6-b9918c0ddbd7",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "bb645dc5-5037-48f4-92c5-f44f7bea8a95",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -616,10 +661,13 @@
                                                         ],
                                                         "false": [
                                                             {
-                                                                "id": "7bab87ea-482c-4481-a0d6-b9918c0ddbd7",
-                                                                "command": "EVENT_DEC_VALUE",
+                                                                "id": "10dcf995-917e-4045-95ad-bb03adff5667",
+                                                                "command": "EVENT_TEXT",
                                                                 "args": {
-                                                                    "variable": "1"
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
                                                                 }
                                                             },
                                                             {
@@ -868,6 +916,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "fd039282-1332-48ed-a8d2-f0e561f982ac",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "b6ddbf8a-ac8a-444f-a4f5-07a1b73b2cfc",
                                                                 "command": "EVENT_END"
                                                             }
@@ -939,7 +997,7 @@
                                                 "Senha da porta com\na NPC Joaninha."
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -948,7 +1006,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "items": 5,
-                                            "option1": "Cera",
+                                            "option1": "19",
                                             "option2": "",
                                             "option3": "",
                                             "option4": "",
@@ -958,7 +1016,7 @@
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -969,7 +1027,7 @@
                                             "operator": "==",
                                             "comparator": 1,
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -1033,6 +1091,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "c4cf977d-b0de-4ddf-a405-29cc54e47e62",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "d38e74df-b1ca-4761-aa82-8939c3141f74",
                                                                 "command": "EVENT_END"
@@ -1105,6 +1173,32 @@
                         },
                         {
                             "id": "61b8f87d-3dfd-42ee-b3e8-68f86871ca48",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "spriteSheetId": "ed2fff22-b3cc-4a5d-bef6-4b0c2837460e",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "dee0e541-7083-4a31-9ac5-744e417ee736",
+                    "x": 6,
+                    "y": 3,
+                    "script": [
+                        {
+                            "id": "bbcd84ea-d913-4317-8fe0-c57318c0cd12",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "12"
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "7cb07f81-28ee-4e63-ac01-a1f51e2ffb46",
                             "command": "EVENT_END"
                         }
                     ]
@@ -1254,6 +1348,276 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "91507a77-e04e-4b61-8558-400ed93b5ef3",
+                    "x": 4,
+                    "y": 2,
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "dd1ee325-a5f7-4c55-9fb0-54b9334d4957",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "0"
+                            }
+                        },
+                        {
+                            "id": "38e9a8ac-623f-4793-9dc7-949d581d267d",
+                            "command": "EVENT_SET_TIMER_SCRIPT",
+                            "args": {
+                                "duration": 0.25
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "58142e72-ec6a-4f9a-bbb0-a6e6b317329b",
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "player",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "cdbc8779-1313-46e6-b867-3f9c09aebe7d",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "e1e34bfc-df51-4588-8958-eb83a8293aad",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "8aaebc4a-5846-4a28-bdef-5fafc53244fa",
+                    "x": 4,
+                    "y": 8,
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "a6d6b18e-625b-4d48-8cfa-a2fe633beb97",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "0"
+                            }
+                        },
+                        {
+                            "id": "1d24d48e-87de-4ebe-8add-857bdb4b5a42",
+                            "command": "EVENT_SET_TIMER_SCRIPT",
+                            "args": {
+                                "duration": 0.25
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "6f34caec-0002-4e6a-b42e-dd2bd07784b0",
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "player",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "30a4fe58-d5eb-4d7e-be6a-d91f73339f07",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ec42e755-d73b-434b-a77d-bfa333c9aa74",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "a392b502-4d31-4997-a505-68bc91a8c286",
+                    "x": 4,
+                    "y": 12,
+                    "width": 4,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "3aea4413-2aac-4b9b-ba5c-42da67b3503d",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "0"
+                            }
+                        },
+                        {
+                            "id": "430da381-a867-44dd-8c8e-4fa5a150fe12",
+                            "command": "EVENT_SET_TIMER_SCRIPT",
+                            "args": {
+                                "duration": 0.25
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "b1df5ce7-14f1-46cf-b0ce-374e81de24e6",
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "player",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "46197eeb-fe30-43ec-8141-4207f98d2d5a",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ce871d27-1a12-431e-9e7d-e93755c1f1bf",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "e3591359-fd99-4cc6-af5d-5f2e2980e86b",
+                    "x": 14,
+                    "y": 12,
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "ddce0d5b-a94c-4e2b-ba94-999382711700",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "0"
+                            }
+                        },
+                        {
+                            "id": "3a4aeb0a-36a5-4b8f-9198-2656461ee7ab",
+                            "command": "EVENT_SET_TIMER_SCRIPT",
+                            "args": {
+                                "duration": 0.25
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "1f726cb8-f041-4cc6-a4c1-98708ec2012e",
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "player",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "9526e673-b8fb-48d3-9d7f-b1b0ea8a54dc",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "697d24c2-6292-4c52-8a35-afc0e7a907f0",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "922d6bef-3404-49a0-a400-30be42c8d808",
+                    "x": 12,
+                    "y": 6,
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "f926a890-c106-4ceb-9f99-f054c5148366",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "0"
+                            }
+                        },
+                        {
+                            "id": "11b8bb0f-a4bb-477e-8933-2b2a1c1ac27a",
+                            "command": "EVENT_SET_TIMER_SCRIPT",
+                            "args": {
+                                "duration": 0.25
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "e35c5e25-14a9-4463-b92a-9ea4eea1f47f",
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "player",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "898599d2-bb99-43d9-b8aa-bf0d6646fa18",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bfcbf969-4c8e-40a8-9a74-78c80ab689da",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "9c387786-4ed4-4c73-a349-e342024fb6a0",
+                    "x": 14,
+                    "y": 2,
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "2f0e4aa0-ba69-43d2-b15b-766cf818d69f",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "0"
+                            }
+                        },
+                        {
+                            "id": "d855f278-2dc2-4d1c-b050-a0143ccec6b8",
+                            "command": "EVENT_SET_TIMER_SCRIPT",
+                            "args": {
+                                "duration": 0.25
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "3da5f7c2-b486-4180-b696-66e4e8ede55e",
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "player",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "23be1b84-c1be-4335-b344-b76a4880d38d",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "dba93997-16b7-4e86-945f-c307667ed2bd",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ],
             "__type": "scene",
@@ -1282,9 +1646,9 @@
                 192,
                 3,
                 0,
-                60,
+                63,
                 0,
-                192,
+                240,
                 3,
                 0,
                 60,
@@ -1350,7 +1714,7 @@
                                                 "O que há na\nsala 13?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -1379,7 +1743,7 @@
                                             "variable": "L0",
                                             "operator": "==",
                                             "comparator": 2,
-                                            "__collapseElse": true,
+                                            "__collapseElse": false,
                                             "__collapse": false
                                         },
                                         "children": {
@@ -1443,6 +1807,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "f3116a5d-857a-4d0c-a874-170ddf9b1ab8",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "de5ee387-99d7-4feb-ab67-0bc84785173e",
                                                                 "command": "EVENT_END"
@@ -1645,6 +2019,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "03f0fce9-8cfc-4a6f-95b1-7e92c840b05d",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele pode errar\nmais $01$ vezes."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "b133d53e-30b8-419e-bbd4-fac652cc96b0",
                                                                 "command": "EVENT_END"
@@ -1855,7 +2239,7 @@
         },
         {
             "name": "Room 4",
-            "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
+            "backgroundId": "37d21afe-6ed8-4fe5-9331-1712d6f84618",
             "width": 20,
             "height": 18,
             "collisions": [
@@ -1864,10 +2248,10 @@
                 255,
                 255,
                 255,
-                3,
+                51,
                 0,
                 60,
-                0,
+                3,
                 192,
                 3,
                 0,
@@ -1876,23 +2260,23 @@
                 192,
                 3,
                 0,
-                60,
+                63,
                 0,
-                192,
+                240,
                 3,
                 0,
                 60,
                 0,
                 192,
                 3,
-                0,
+                48,
                 60,
                 0,
-                192,
-                3,
+                195,
+                195,
                 0,
                 60,
-                0,
+                12,
                 192,
                 3,
                 0,
@@ -2041,6 +2425,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "d447cc54-5bbb-4a0e-8e3c-3ba4afa6321d",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "76128c1a-8a39-4b77-b6bf-b8172ebd386e",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -2068,6 +2459,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "70bdda80-a407-43e1-9900-7c5f2fceeab8",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "f17e372d-7bf7-46b0-935c-b01a926574c5",
                                                                 "command": "EVENT_END"
@@ -2109,7 +2510,23 @@
                     "animSpeed": "3",
                     "id": "b66ee70f-d503-4086-9ef8-b83be156c93f",
                     "x": 8,
-                    "y": 9
+                    "y": 9,
+                    "script": [
+                        {
+                            "id": "be0fb96b-bc65-466d-ba5e-681875ab782e",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Ratoeiras da sala\n13 x ratoeiras da \nsala 16 - 1."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "96741865-40d7-451c-9494-fdcb94cd2996",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ],
             "triggers": [
@@ -2166,7 +2583,7 @@
         },
         {
             "name": "Room 5",
-            "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
+            "backgroundId": "b10c05de-1d00-46af-af7c-46a099c737ca",
             "width": 20,
             "height": 18,
             "collisions": [
@@ -2180,10 +2597,10 @@
                 60,
                 0,
                 192,
-                3,
-                0,
+                195,
+                12,
                 60,
-                0,
+                204,
                 192,
                 3,
                 0,
@@ -2195,16 +2612,16 @@
                 48,
                 0,
                 0,
-                3,
+                51,
                 0,
                 60,
-                0,
+                3,
                 192,
                 3,
-                0,
+                48,
                 60,
                 0,
-                192,
+                195,
                 3,
                 0,
                 60,
@@ -2279,8 +2696,8 @@
                                             "variable": "L0",
                                             "operator": "==",
                                             "comparator": 4,
-                                            "__collapseElse": true,
-                                            "__collapse": true
+                                            "__collapseElse": false,
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -2308,6 +2725,13 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "46aaae75-02f4-4a94-a3e0-2f3fab663561",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
                                                 {
                                                     "id": "5ec207b0-9e6c-4327-8d1f-a654f63dfa47",
                                                     "command": "EVENT_IF_VALUE",
@@ -2337,10 +2761,13 @@
                                                         ],
                                                         "false": [
                                                             {
-                                                                "id": "46aaae75-02f4-4a94-a3e0-2f3fab663561",
-                                                                "command": "EVENT_DEC_VALUE",
+                                                                "id": "97415a10-b555-446b-a94e-278545815a75",
+                                                                "command": "EVENT_TEXT",
                                                                 "args": {
-                                                                    "variable": "1"
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
                                                                 }
                                                             },
                                                             {
@@ -2521,7 +2948,7 @@
                                             "variable": "L0",
                                             "operator": "==",
                                             "comparator": 4,
-                                            "__collapseElse": true,
+                                            "__collapseElse": false,
                                             "__collapse": false
                                         },
                                         "children": {
@@ -2554,7 +2981,7 @@
                                                     "id": "62576352-c47b-4acd-9012-5ab98b67d641",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
-                                                        "variable": "L0"
+                                                        "variable": "1"
                                                     }
                                                 },
                                                 {
@@ -2585,6 +3012,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "6e08f3ec-d5f6-458d-a0cd-0ba9683f60bb",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "fe5e4443-7f60-4e17-aab0-5261cd1f3858",
                                                                 "command": "EVENT_END"
@@ -2625,7 +3062,7 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "599ad894-17e6-47de-9b60-58ba645e3cd7",
-                    "x": 14,
+                    "x": 2,
                     "y": 1
                 }
             ],
@@ -2731,7 +3168,7 @@
         },
         {
             "name": "Room 6",
-            "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
+            "backgroundId": "fcc773f2-17ff-4c54-af6b-909c49116ee2",
             "width": 20,
             "height": 18,
             "collisions": [
@@ -2755,9 +3192,9 @@
                 60,
                 0,
                 192,
+                3,
                 0,
-                0,
-                0,
+                48,
                 0,
                 0,
                 3,
@@ -2876,6 +3313,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "28130bc8-5429-4754-bdd1-c59b38293213",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "87b2671a-90fa-4977-82f0-745a04dc521e",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -2904,10 +3348,13 @@
                                                         ],
                                                         "false": [
                                                             {
-                                                                "id": "28130bc8-5429-4754-bdd1-c59b38293213",
-                                                                "command": "EVENT_DEC_VALUE",
+                                                                "id": "98579768-690f-46a9-975a-3246d8fc91e7",
+                                                                "command": "EVENT_TEXT",
                                                                 "args": {
-                                                                    "variable": "1"
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
                                                                 }
                                                             },
                                                             {
@@ -3046,7 +3493,7 @@
                                             "operator": "==",
                                             "comparator": 4,
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -3076,6 +3523,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "c79f832f-b5ac-4c22-b2e4-af1278e01f2f",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "54e2965c-a77f-4c6d-9a75-4318574a4b7c",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -3104,10 +3558,13 @@
                                                         ],
                                                         "false": [
                                                             {
-                                                                "id": "c79f832f-b5ac-4c22-b2e4-af1278e01f2f",
-                                                                "command": "EVENT_DEC_VALUE",
+                                                                "id": "a8e5814b-1a6a-47c1-84b5-ad37156a32ed",
+                                                                "command": "EVENT_TEXT",
                                                                 "args": {
-                                                                    "variable": "1"
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
                                                                 }
                                                             },
                                                             {
@@ -3288,7 +3745,7 @@
                                             "variable": "L0",
                                             "operator": "==",
                                             "comparator": 4,
-                                            "__collapseElse": true,
+                                            "__collapseElse": false,
                                             "__collapse": false
                                         },
                                         "children": {
@@ -3318,6 +3775,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "7d2aa385-a7af-41bd-9518-50e438bb5f34",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "37bf1727-e1de-40d5-8d3e-8bc3a5da961e",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -3346,10 +3810,13 @@
                                                         ],
                                                         "false": [
                                                             {
-                                                                "id": "7d2aa385-a7af-41bd-9518-50e438bb5f34",
-                                                                "command": "EVENT_DEC_VALUE",
+                                                                "id": "e1f78cfb-ff0c-4b4c-a8b2-08cb3f77a9de",
+                                                                "command": "EVENT_TEXT",
                                                                 "args": {
-                                                                    "variable": "1"
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
                                                                 }
                                                             },
                                                             {
@@ -3455,7 +3922,7 @@
                                             "operator": "==",
                                             "comparator": 4,
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -3483,6 +3950,13 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "24978166-e8bb-474a-94db-2edf129f0d5e",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
                                                 {
                                                     "id": "a9fc7e12-c671-4a7f-ab21-b09b473f74ab",
                                                     "command": "EVENT_IF_VALUE",
@@ -3512,10 +3986,13 @@
                                                         ],
                                                         "false": [
                                                             {
-                                                                "id": "24978166-e8bb-474a-94db-2edf129f0d5e",
-                                                                "command": "EVENT_DEC_VALUE",
+                                                                "id": "3e52a130-5215-486f-9683-2903502ab10f",
+                                                                "command": "EVENT_TEXT",
                                                                 "args": {
-                                                                    "variable": "10"
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
                                                                 }
                                                             },
                                                             {
@@ -3787,6 +4264,231 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "ebe45841-833b-4fbc-943e-780307799752",
+                    "x": 4,
+                    "y": 6,
+                    "width": 8,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "7a8487f7-b0a6-4335-8d13-a401256a4e98",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "0"
+                            }
+                        },
+                        {
+                            "id": "5e98ef39-f041-4cb3-8933-a4644bcdb132",
+                            "command": "EVENT_SET_TIMER_SCRIPT",
+                            "args": {
+                                "duration": 0.25
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "0d3d69da-63f3-450f-a88b-cf7696910fb6",
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "player",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "c978e4b7-8dd7-4a7a-8527-5b2867cab9f9",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "676d3e6d-df04-448f-a2e7-0b783f47b5ce",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "744c63e2-c8dd-408e-8a48-1823887ccbbd",
+                    "x": 4,
+                    "y": 12,
+                    "width": 4,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "00153a24-4712-4691-b223-2aa0164d264a",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "0"
+                            }
+                        },
+                        {
+                            "id": "10eec4ae-1dfd-4d1e-b6b5-38bb66122c08",
+                            "command": "EVENT_SET_TIMER_SCRIPT",
+                            "args": {
+                                "duration": 0.25
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "28f1d9c9-f19f-4650-80d5-e75c70a68403",
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "player",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "30373434-229c-4cfa-ab18-956c045d7e8b",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "52bc3de7-3e16-4994-81ea-50b76e3ada67",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "9f131b48-0733-4539-944e-36e2a35c41b6",
+                    "x": 12,
+                    "y": 12,
+                    "width": 4,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "21979932-0578-4cb8-9af7-2bd2e43405a0",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "0"
+                            }
+                        },
+                        {
+                            "id": "bf79958b-1f4f-4400-9f9a-5abbf865dbff",
+                            "command": "EVENT_SET_TIMER_SCRIPT",
+                            "args": {
+                                "duration": 0.25
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "b6d3accd-d3d3-4273-8842-cb1e8592be4e",
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "player",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "883cfd56-260f-457d-879a-17f4696d0c80",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ba85a2d4-4c70-4870-86c4-6b7643ceb9da",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "bc983dce-9788-4cb2-829b-9a97d7149d05",
+                    "x": 12,
+                    "y": 4,
+                    "width": 4,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "7287a5ac-dc42-40ff-ad10-dff72e8171cd",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "0"
+                            }
+                        },
+                        {
+                            "id": "1477c6ff-37d0-4870-90ff-bda2af74f50b",
+                            "command": "EVENT_SET_TIMER_SCRIPT",
+                            "args": {
+                                "duration": 0.25
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "662a2614-fd06-4f1f-be17-e247e6ad9a1b",
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "player",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "830cde40-7148-44f3-8ebf-774fb1f37283",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "9abb8bea-f096-408d-a556-efebdc84451a",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "4fed8b30-8f3b-4056-b9da-006421d59aae",
+                    "x": 14,
+                    "y": 6,
+                    "width": 4,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "e25f79ed-8d5c-47c5-b259-17b1ab5442cc",
+                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                            "args": {
+                                "actorId": "player",
+                                "speed": "0"
+                            }
+                        },
+                        {
+                            "id": "a3d61c69-8ec0-4689-8398-150cc1a508b6",
+                            "command": "EVENT_SET_TIMER_SCRIPT",
+                            "args": {
+                                "duration": 0.25
+                            },
+                            "children": {
+                                "script": [
+                                    {
+                                        "id": "0e6bdf08-1260-4242-a4de-d26245508192",
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "player",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "34b723ee-7fa6-46b5-b903-4aafb40e799f",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "92254354-6478-4465-9488-e59e239d8901",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ],
             "__type": "scene",
@@ -3809,10 +4511,10 @@
                 207,
                 255,
                 3,
-                0,
+                192,
                 60,
                 0,
-                192,
+                204,
                 3,
                 0,
                 60,
@@ -3828,10 +4530,10 @@
                 0,
                 0,
                 0,
-                3,
+                51,
                 0,
                 60,
-                0,
+                3,
                 192,
                 3,
                 0,
@@ -4023,6 +4725,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "099e590c-5d70-44b6-a9ae-2f04a2ea7979",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "e7b1f138-b901-4fa8-91a4-406e0b9cf124",
                                                                 "command": "EVENT_END"
                                                             }
@@ -4144,6 +4856,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "ad292a02-3f9d-4a4a-94e9-67c3cc4d673c",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "ce80aab6-3325-4b79-b22d-7000d2285d68",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -4171,6 +4890,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "7e0493f4-7add-4fd1-a5e9-8edf9b14a110",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "d887fc77-9349-4bca-bd7b-717e9b45f111",
                                                                 "command": "EVENT_END"
@@ -4380,6 +5109,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "8e15a25a-eb53-4f83-af85-3f1a5198d9bb",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "204a737c-4f04-426f-8c57-b709ac0229b7",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -4408,10 +5144,13 @@
                                                         ],
                                                         "false": [
                                                             {
-                                                                "id": "8e15a25a-eb53-4f83-af85-3f1a5198d9bb",
-                                                                "command": "EVENT_DEC_VALUE",
+                                                                "id": "87971452-3530-447e-9aa5-89d007c5b7dd",
+                                                                "command": "EVENT_TEXT",
                                                                 "args": {
-                                                                    "variable": "1"
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
                                                                 }
                                                             },
                                                             {
@@ -4613,6 +5352,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "6730e299-2044-41c8-a290-daaae09a7b81",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "3d81c900-e527-414c-8ad0-7174cc6f3ebe",
                                                                 "command": "EVENT_END"
@@ -4845,7 +5594,7 @@
         },
         {
             "name": "Room 9",
-            "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
+            "backgroundId": "cd8eda99-6644-414d-9c99-8310c50a7386",
             "width": 20,
             "height": 18,
             "collisions": [
@@ -5066,6 +5815,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "6ea316dd-be4f-4e9f-ae98-962960de3440",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "3168db5e-a619-4302-bc76-da1402960c8c",
                                                                 "command": "EVENT_END"
                                                             }
@@ -5158,8 +5917,8 @@
                                             "variable": "L0",
                                             "operator": "==",
                                             "comparator": 4,
-                                            "__collapseElse": true,
-                                            "__collapse": true
+                                            "__collapseElse": false,
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -5222,6 +5981,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "40a25fd0-976b-476c-acfd-bdf39e23684f",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "376b263f-8ca2-4021-bba5-233779b1aa53",
                                                                 "command": "EVENT_END"
@@ -5357,7 +6126,7 @@
                                             "variable": "L0",
                                             "operator": "==",
                                             "comparator": 4,
-                                            "__collapseElse": true,
+                                            "__collapseElse": false,
                                             "__collapse": false
                                         },
                                         "children": {
@@ -5390,7 +6159,7 @@
                                                     "id": "ed34e70b-7ec3-4d48-940c-df974752f924",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
-                                                        "variable": "L0"
+                                                        "variable": "1"
                                                     }
                                                 },
                                                 {
@@ -5421,6 +6190,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "a603cf4c-f1f6-4f61-bb6b-c62ebd5cfa62",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "0d358fb9-abcf-4d6f-8bd0-717e07276d85",
                                                                 "command": "EVENT_END"
@@ -5504,8 +6283,30 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "ad30d5f3-9319-4d51-a165-6cd8ba1e9502",
-                    "x": 14,
-                    "y": 16
+                    "x": 0,
+                    "y": 13
+                },
+                {
+                    "spriteSheetId": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
+                    "movementType": "randomWalk",
+                    "direction": "down",
+                    "moveSpeed": "2",
+                    "animSpeed": "3",
+                    "id": "da6b03fc-535b-4829-8f57-c773ecf4b3d7",
+                    "x": 12,
+                    "y": 8,
+                    "animate": false
+                },
+                {
+                    "spriteSheetId": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
+                    "movementType": "randomWalk",
+                    "direction": "down",
+                    "moveSpeed": "2",
+                    "animSpeed": "3",
+                    "id": "e9a9870e-fdd4-42d2-91b2-c30bdc730d9f",
+                    "x": 4,
+                    "y": 6,
+                    "__type": "actor"
                 }
             ],
             "triggers": [
@@ -5880,6 +6681,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "79e444f4-f505-4397-9aa2-a52656f4d5f6",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "d6a2a55e-f361-4517-a55a-9893e0870d88",
                                                                 "command": "EVENT_END"
                                                             }
@@ -6079,6 +6890,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "8cfd1026-e213-4066-8571-7c139f62fb7d",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "863f2576-2cfe-4a06-95b7-a1f1b9980bff",
                                                                 "command": "EVENT_END"
                                                             }
@@ -6235,6 +7056,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "4674ccb1-20c1-478b-97c4-6286ef61fd80",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "1b4d608a-0d8d-465e-9f29-45f819a9f313",
                                                                 "command": "EVENT_END"
                                                             }
@@ -6317,8 +7148,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "c0a5b1d0-62c8-4df6-a26f-940ffea7f39e",
-                    "x": 15,
-                    "y": 16
+                    "x": 18,
+                    "y": 13
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -6452,6 +7283,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "71fa4d0b-2671-43c8-b84a-82301673b0e6",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "f83631a6-1838-4253-851e-dc644c57ee7b",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -6480,10 +7318,13 @@
                                                         ],
                                                         "false": [
                                                             {
-                                                                "id": "71fa4d0b-2671-43c8-b84a-82301673b0e6",
-                                                                "command": "EVENT_DEC_VALUE",
+                                                                "id": "1879a5d6-cd20-41ee-8015-43a154495404",
+                                                                "command": "EVENT_TEXT",
                                                                 "args": {
-                                                                    "variable": "10"
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
                                                                 }
                                                             },
                                                             {
@@ -6718,7 +7559,7 @@
         },
         {
             "name": "Room 11",
-            "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
+            "backgroundId": "a3ad666c-f74c-496a-ad31-91ff8d56b976",
             "width": 20,
             "height": 18,
             "collisions": [
@@ -6752,10 +7593,10 @@
                 60,
                 0,
                 192,
-                3,
+                51,
                 0,
                 60,
-                0,
+                3,
                 192,
                 3,
                 0,
@@ -6832,7 +7673,7 @@
                                             "operator": "==",
                                             "comparator": 4,
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -6895,6 +7736,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "0d9b1da1-6e8c-4e30-bb48-51912a595439",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "152f825a-7417-49ea-a289-31a01d1eb8f9",
                                                                 "command": "EVENT_END"
@@ -7095,6 +7946,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "7e98f23a-526f-43fb-8554-acf7d3895ad6",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "bf680027-735e-4fe9-b711-c92eecaa3972",
                                                                 "command": "EVENT_END"
                                                             }
@@ -7294,6 +8155,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "ac3526ba-6961-441b-a426-a649bbe9f4e5",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "605ecc6c-8218-46c2-9466-d579908da735",
                                                                 "command": "EVENT_END"
                                                             }
@@ -7377,7 +8248,7 @@
                     "animSpeed": "3",
                     "id": "bf5dcab9-7aaf-45f4-bced-ecaeefd6ba9d",
                     "x": 15,
-                    "y": 16
+                    "y": 17
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -7439,7 +8310,7 @@
                                             "operator": "==",
                                             "comparator": 4,
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -7502,6 +8373,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "7a6c5a02-96cc-4841-bc7c-5352151b23f0",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "25dfb801-a90a-4aac-9913-25f8eb59db3d",
                                                                 "command": "EVENT_END"
@@ -7577,6 +8458,16 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "spriteSheetId": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
+                    "movementType": "randomWalk",
+                    "direction": "down",
+                    "moveSpeed": "2",
+                    "animSpeed": "3",
+                    "id": "44579bc7-202b-405a-bfdc-bcd41691ad72",
+                    "x": 13,
+                    "y": 5
                 }
             ],
             "triggers": [
@@ -7777,7 +8668,7 @@
         },
         {
             "name": "Room 12",
-            "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
+            "backgroundId": "39774600-9f2f-4959-a499-b2e65a25d880",
             "width": 20,
             "height": 18,
             "collisions": [
@@ -7963,6 +8854,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "2da74ac5-49b5-46fb-9e20-55a00bda5f65",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "8f2d8d9e-01b5-4fb3-913f-232086c7b39f",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -7990,6 +8888,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "f24fbdd7-9d34-4f51-825d-d0e210afaa05",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "2ba276fa-f2ff-4f11-9ae0-7d8e4ad32735",
                                                                 "command": "EVENT_END"
@@ -8147,6 +9055,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "84a7e67b-da33-4a11-96e3-5aec1750004e",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "ec1a4832-b440-40cb-afc6-b04a6304023e",
                                                                 "command": "EVENT_END"
                                                             }
@@ -8229,8 +9147,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "f48b84e6-aa0c-4b01-a9aa-8977e78151a3",
-                    "x": 15,
-                    "y": 16
+                    "x": 5,
+                    "y": 17
                 }
             ],
             "triggers": [
@@ -8335,7 +9253,7 @@
         },
         {
             "name": "Room 13",
-            "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
+            "backgroundId": "86d9a995-8fd4-488b-8c2e-2edccef9ad53",
             "width": 20,
             "height": 18,
             "collisions": [
@@ -8345,9 +9263,14 @@
                 207,
                 255,
                 3,
-                0,
+                48,
                 60,
                 0,
+                195,
+                51,
+                0,
+                60,
+                3,
                 192,
                 3,
                 0,
@@ -8355,25 +9278,20 @@
                 0,
                 192,
                 3,
-                0,
+                192,
                 60,
                 0,
+                204,
+                3,
+                12,
+                60,
+                192,
                 192,
                 3,
                 0,
-                60,
+                63,
                 0,
-                192,
-                3,
-                0,
-                60,
-                0,
-                192,
-                3,
-                0,
-                60,
-                0,
-                192,
+                240,
                 3,
                 0,
                 60,
@@ -8492,7 +9410,7 @@
                                             "variable": "L0",
                                             "operator": "==",
                                             "comparator": 4,
-                                            "__collapseElse": true,
+                                            "__collapseElse": false,
                                             "__collapse": false
                                         },
                                         "children": {
@@ -8557,6 +9475,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "5194f1ce-eb9d-43bc-bd44-38cbc8b4dfe0",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "eecf8f79-e8e9-4a46-82a5-85645dfac277",
                                                                 "command": "EVENT_END"
                                                             }
@@ -8596,8 +9524,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "944c4000-6594-4cbe-879f-63d0669172ef",
-                    "x": 5,
-                    "y": 12
+                    "x": 4,
+                    "y": 11
                 }
             ],
             "triggers": [
@@ -8668,20 +9596,20 @@
                 60,
                 0,
                 192,
-                3,
+                195,
                 0,
                 60,
-                0,
+                12,
                 192,
                 3,
-                0,
+                192,
                 60,
                 0,
-                192,
-                3,
+                204,
+                51,
                 0,
                 48,
-                0,
+                3,
                 0,
                 3,
                 0,
@@ -8689,14 +9617,14 @@
                 0,
                 192,
                 3,
-                0,
-                60,
-                0,
                 192,
-                3,
-                0,
                 60,
                 0,
+                204,
+                195,
+                0,
+                60,
+                12,
                 192,
                 255,
                 243,
@@ -8709,7 +9637,7 @@
             "y": 844.666666666667,
             "actors": [
                 {
-                    "spriteSheetId": "2e6b68f4-5219-4d9d-b943-5e46335e9515",
+                    "spriteSheetId": "0e2bd949-8dac-4490-8137-04becf4e5e89",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -8724,7 +9652,8 @@
                             "command": "EVENT_IF_FALSE",
                             "args": {
                                 "variable": "22",
-                                "__collapseElse": false
+                                "__collapseElse": false,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -8778,14 +9707,18 @@
                                                     }
                                                 },
                                                 {
-                                                    "id": "c3f3113d-e9f5-43ac-84fd-51d3a415ea3c",
-                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "id": "123a972b-7471-482c-9905-57ad7abfc38b",
+                                                    "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
                                                     "args": {
-                                                        "sceneId": "e32af5a2-495a-48cf-86ff-947d9ae2a5db",
-                                                        "x": 9,
-                                                        "y": 15,
-                                                        "direction": "up",
-                                                        "fadeSpeed": "2"
+                                                        "actorId": "$self$"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "29ad6a15-7bd6-471a-b690-47ecdc9d0b96",
+                                                    "command": "EVENT_ACTOR_SET_FRAME",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "frame": 1
                                                     }
                                                 },
                                                 {
@@ -8830,6 +9763,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "91f0ac95-ba2d-4c76-9c0d-1f4fea0a0e85",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "07c447eb-e6f8-4cd5-99ce-6e2f412d0836",
                                                                 "command": "EVENT_END"
                                                             }
@@ -8863,10 +9806,48 @@
                     ],
                     "startScript": [
                         {
+                            "id": "af69f4ab-e2ac-431c-a54d-cb6d4eae3459",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "22",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "a855d6e3-3502-4b0f-bc1d-eef656b1176c",
+                                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "4d3ad2e9-c28b-4dc3-a972-60ec1649f306",
+                                        "command": "EVENT_ACTOR_SET_FRAME",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "frame": 1
+                                        }
+                                    },
+                                    {
+                                        "id": "7b6eccb4-8251-459d-bdba-ce01ce7bd620",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "5d4c17a7-d553-4100-beb5-8056331304a5",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
                             "id": "10e17995-4444-422c-8856-550fce99a2de",
                             "command": "EVENT_END"
                         }
-                    ]
+                    ],
+                    "frame": null
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -9035,6 +10016,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "57845963-0980-40dc-972f-ab30a07c4296",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "72ecd377-1dcc-47c6-b470-7ff0ae9e1ceb",
                                                                 "command": "EVENT_END"
                                                             }
@@ -9192,6 +10183,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "d274d422-31b4-4c58-bfb5-6eeaa48b8215",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "02022ba9-fba4-4e6c-a1d9-88426b6a614a",
                                                                 "command": "EVENT_END"
                                                             }
@@ -9269,13 +10270,13 @@
                 },
                 {
                     "spriteSheetId": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
-                    "movementType": "static",
+                    "movementType": "randomWalk",
                     "direction": "down",
-                    "moveSpeed": "1",
+                    "moveSpeed": "2",
                     "animSpeed": "3",
                     "id": "c1fd1513-bee5-43a3-9bb6-e78021c077d2",
-                    "x": 3,
-                    "y": 13
+                    "x": 5,
+                    "y": 12
                 }
             ],
             "triggers": [
@@ -9374,6 +10375,53 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "ff061bce-276e-4ba6-ad72-58927ae8358f",
+                    "x": 10,
+                    "y": 16,
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "7190aeb2-1ea3-4e26-aad7-6110b0d2da35",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "22",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "80abf16e-4108-4fc6-95c0-86ea54e8b5d8",
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "e32af5a2-495a-48cf-86ff-947d9ae2a5db",
+                                            "x": 0,
+                                            "y": 0,
+                                            "direction": "",
+                                            "fadeSpeed": "2"
+                                        }
+                                    },
+                                    {
+                                        "id": "87ef4a52-e0e6-46ab-9859-09f1213e7a3e",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "51fe7a46-30b3-4cfd-9eac-f95716e1e852",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "62472283-a755-4aa9-9e46-5bdc7e951596",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ],
             "__type": "scene"
@@ -9389,20 +10437,20 @@
                 255,
                 159,
                 255,
-                3,
+                195,
                 0,
                 60,
-                0,
+                12,
                 192,
                 3,
                 0,
                 60,
                 0,
                 192,
-                3,
+                51,
                 0,
                 60,
-                0,
+                3,
                 192,
                 0,
                 0,
@@ -9557,6 +10605,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "b8b1346c-9cb9-4dc0-9cc8-ed1951f6af0b",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "99070c8e-d3d5-4708-aa74-15deb52a84b9",
                                                                 "command": "EVENT_END"
@@ -9800,6 +10858,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "3ac95688-b113-4fe3-bc4d-d5b3bb687fe7",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "ab5f2e8b-9944-4bca-b124-41e0e3c83888",
                                                                 "command": "EVENT_END"
                                                             }
@@ -9956,6 +11024,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "cf742242-9b9d-44df-9d2b-594157e1b667",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "14c10eb3-ef45-419b-a8b7-2b190b7e236e",
                                                                 "command": "EVENT_END"
                                                             }
@@ -10043,13 +11121,13 @@
                 },
                 {
                     "spriteSheetId": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
-                    "movementType": "static",
+                    "movementType": "randomWalk",
                     "direction": "down",
-                    "moveSpeed": "1",
+                    "moveSpeed": "2",
                     "animSpeed": "3",
                     "id": "4ce46b40-203e-47b9-b14d-7f20bdc18975",
                     "x": 7,
-                    "y": 12
+                    "y": 11
                 }
             ],
             "triggers": [
@@ -10202,7 +11280,7 @@
         },
         {
             "name": "Room 16",
-            "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
+            "backgroundId": "d49e9e17-8a9e-4a98-bf25-c7633d49c4ba",
             "width": 20,
             "height": 18,
             "collisions": [
@@ -10216,11 +11294,11 @@
                 60,
                 0,
                 192,
-                3,
-                0,
-                60,
-                0,
+                51,
                 192,
+                60,
+                3,
+                204,
                 3,
                 0,
                 60,
@@ -10236,11 +11314,11 @@
                 60,
                 0,
                 192,
-                3,
-                0,
-                60,
-                0,
+                51,
                 192,
+                60,
+                3,
+                204,
                 3,
                 0,
                 60,
@@ -10423,6 +11501,16 @@
                                                         ],
                                                         "false": [
                                                             {
+                                                                "id": "5858c0d1-383e-419c-93d8-7a6da43739cc",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "908a9404-90fe-4f76-ac9c-1ae858e5235d",
                                                                 "command": "EVENT_END"
                                                             }
@@ -10563,7 +11651,7 @@
         },
         {
             "name": "Room 8",
-            "backgroundId": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
+            "backgroundId": "b998fb1c-c0a4-4023-ae9d-17f24c0622ee",
             "width": 20,
             "height": 18,
             "collisions": [
@@ -10619,13 +11707,13 @@
             "actors": [
                 {
                     "spriteSheetId": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
-                    "movementType": "static",
+                    "movementType": "randomWalk",
                     "direction": "down",
-                    "moveSpeed": "1",
+                    "moveSpeed": "2",
                     "animSpeed": "3",
                     "id": "2ecd5fdb-52b9-406a-b8a1-cde35ea61fdc",
-                    "x": 14,
-                    "y": 6
+                    "x": 13,
+                    "y": 5
                 },
                 {
                     "spriteSheetId": "91581f70-b831-40de-b454-09594827884e",
@@ -10634,8 +11722,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "bdc2839b-39c7-45d7-90cc-db104c6857e6",
-                    "x": 15,
-                    "y": 16
+                    "x": 18,
+                    "y": 5
                 },
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -10724,6 +11812,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "153de414-d456-4b3f-a07a-88ea5f2b89bc",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "f9ddd38d-93eb-4759-aa94-170125ef8523",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -10751,6 +11846,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "9e870661-c5a5-40f1-9b2c-968ebb805d16",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "a758da44-5286-4cc0-a3ec-49e4d0692334",
                                                                 "command": "EVENT_END"
@@ -10915,6 +12020,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "3bc5374b-0c88-4ae6-af3d-e4184c6cb9cc",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "24e016d3-57f2-49e4-bfc7-5203af58ff0c",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -10942,6 +12054,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "53563e95-885a-4c2d-8dfc-b4f883d6868a",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "1d849e19-1ce5-42ef-9bcd-38b1d183c546",
                                                                 "command": "EVENT_END"
@@ -11078,7 +12200,7 @@
                                             "operator": "==",
                                             "comparator": 4,
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -11107,6 +12229,13 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "c03b82c3-43bd-4255-ac80-47d4052ecac1",
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    }
+                                                },
+                                                {
                                                     "id": "912b51dd-2727-41da-86ba-b5eec5191d1b",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -11134,6 +12263,16 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "20cf37e1-515c-403c-a21f-c88e643ac6d0",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ele tem mais $01$\nchances."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "179344c9-4482-4237-b924-8dfbb4b7c012",
                                                                 "command": "EVENT_END"
@@ -11518,26 +12657,6 @@
     ],
     "backgrounds": [
         {
-            "id": "231089e6-7f81-4c1b-8bf2-611d2ef95d25",
-            "name": "logo",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "logo.png",
-            "_v": 1579748776972
-        },
-        {
-            "id": "cac5c4db-41e3-4c1d-b1c9-2a3db55ba919",
-            "name": "placeholder",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "placeholder.png",
-            "_v": 1579748776972
-        },
-        {
             "id": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
             "name": "Room",
             "width": 20,
@@ -11545,7 +12664,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "2a0fa7fc-7c21-4484-bf86-79a4de5cfeec",
@@ -11555,7 +12674,37 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room10.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
+        },
+        {
+            "id": "a3ad666c-f74c-496a-ad31-91ff8d56b976",
+            "name": "Room11",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room11.png",
+            "_v": 1579826108476
+        },
+        {
+            "id": "39774600-9f2f-4959-a499-b2e65a25d880",
+            "name": "Room12",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room12.png",
+            "_v": 1579826108476
+        },
+        {
+            "id": "86d9a995-8fd4-488b-8c2e-2edccef9ad53",
+            "name": "Room13",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room13.png",
+            "_v": 1579826108476
         },
         {
             "id": "62f62e44-6d4b-43ff-9fb5-15c942914816",
@@ -11565,7 +12714,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room14.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "f8987c61-ea7e-4c5b-a537-05163fc5b778",
@@ -11575,7 +12724,27 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room15.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
+        },
+        {
+            "id": "d49e9e17-8a9e-4a98-bf25-c7633d49c4ba",
+            "name": "Room16",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room16.png",
+            "_v": 1579826108476
+        },
+        {
+            "id": "9467a840-ab34-4261-b359-85941b91934f",
+            "name": "Room2",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room2.png",
+            "_v": 1579826108476
         },
         {
             "id": "d7105c2a-cbe9-4043-b168-55909ba359b9",
@@ -11585,7 +12754,37 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room3.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
+        },
+        {
+            "id": "37d21afe-6ed8-4fe5-9331-1712d6f84618",
+            "name": "Room4",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room4.png",
+            "_v": 1579826108476
+        },
+        {
+            "id": "b10c05de-1d00-46af-af7c-46a099c737ca",
+            "name": "Room5",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room5.png",
+            "_v": 1579826108476
+        },
+        {
+            "id": "fcc773f2-17ff-4c54-af6b-909c49116ee2",
+            "name": "Room6",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room6.png",
+            "_v": 1579826108476
         },
         {
             "id": "b7471259-e7d4-47f2-9e12-8eab3e9031a7",
@@ -11595,7 +12794,47 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room7.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
+        },
+        {
+            "id": "b998fb1c-c0a4-4023-ae9d-17f24c0622ee",
+            "name": "Room8",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room8.png",
+            "_v": 1579826108476
+        },
+        {
+            "id": "cd8eda99-6644-414d-9c99-8310c50a7386",
+            "name": "Room9",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room9.png",
+            "_v": 1579826108476
+        },
+        {
+            "id": "231089e6-7f81-4c1b-8bf2-611d2ef95d25",
+            "name": "logo",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "logo.png",
+            "_v": 1579826108476
+        },
+        {
+            "id": "cac5c4db-41e3-4c1d-b1c9-2a3db55ba919",
+            "name": "placeholder",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "placeholder.png",
+            "_v": 1579826108476
         },
         {
             "id": "70a9d7a0-606e-4f23-91f1-566f3b4bded5",
@@ -11605,7 +12844,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         }
     ],
     "spriteSheets": [
@@ -11615,7 +12854,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Buraco_16x16.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "f2c8c4d4-b4eb-4c5f-822e-4a631f539dc0",
@@ -11623,7 +12862,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "NPC_Lesma.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "0d34ed82-a795-4bf1-a461-5b679e096bd6",
@@ -11631,7 +12870,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "NPC_Mosca.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "ee6455e3-0bb4-494e-b980-cc8a43d506d6",
@@ -11639,7 +12878,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "NPC_joaninha.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "8100cfdd-4deb-4d1a-8aa3-f0a894469493",
@@ -11647,7 +12886,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Parede_16x16.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "70b207e7-05f6-46a8-8426-154683417563",
@@ -11655,7 +12894,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "Rato_parado.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "285bc766-d9a0-450b-bd11-bd56722a571c",
@@ -11663,7 +12902,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "a.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -11671,7 +12910,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -11679,7 +12918,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "3d0081eb-edc9-4902-b506-9fb93adba5d6",
@@ -11687,7 +12926,7 @@
             "numFrames": 25,
             "type": "animated",
             "filename": "alphabet-1.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "e7e1d9d5-c762-4416-8cb9-5d0746da7c09",
@@ -11695,7 +12934,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "b.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "524499c3-b44a-40d4-9f0a-f4fb60b45a74",
@@ -11703,7 +12942,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "barata_16x16.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "2e4fa395-5fa4-4963-bcba-e70334124474",
@@ -11711,7 +12950,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "c.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "066d584f-17e4-4e3e-8881-ed2ab7b74a63",
@@ -11719,7 +12958,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "chave.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
+        },
+        {
+            "id": "4e93ef72-5294-44d3-953f-84bfce0eea49",
+            "name": "credits",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "credits.png",
+            "_v": 1579826108476
         },
         {
             "id": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -11727,7 +12974,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "doors.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "d47c6077-035a-4abb-a40e-ab2fbf144f0a",
@@ -11735,7 +12982,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "e.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "ed6b8755-9771-4dff-b4bb-18ec69b22e53",
@@ -11743,7 +12990,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "i.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "3b85d30d-eeea-4495-8b5e-0b19c7ff6cd5",
@@ -11751,15 +12998,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "m.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
             "name": "morcego_16x16",
-            "numFrames": 1,
-            "type": "static",
+            "numFrames": 6,
+            "type": "actor_animated",
             "filename": "morcego_16x16.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "91581f70-b831-40de-b454-09594827884e",
@@ -11767,7 +13014,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "o.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
+        },
+        {
+            "id": "ed2fff22-b3cc-4a5d-bef6-4b0c2837460e",
+            "name": "paper",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "paper.png",
+            "_v": 1579826108476
         },
         {
             "id": "a9bb9b11-ef78-4de5-9544-7dbdad820787",
@@ -11775,7 +13030,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "porta_aberta_16x16.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "d64579dd-9176-4adb-95b6-9d62507a86f1",
@@ -11783,23 +13038,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "porta_fechada_16x16.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
-            "id": "5047e322-02de-4625-aad0-1abb22adc84e",
-            "name": "porta_final_aberta.",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "porta_final_aberta..png",
-            "_v": 1579748776972
-        },
-        {
-            "id": "2e6b68f4-5219-4d9d-b943-5e46335e9515",
-            "name": "porta_final_fechada",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "porta_final_fechada.png",
-            "_v": 1579748776972
+            "id": "0e2bd949-8dac-4490-8137-04becf4e5e89",
+            "name": "porta_final",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "porta_final.png",
+            "_v": 1579826976691
         },
         {
             "id": "cc3f4208-b6fd-48f8-b448-b2fb2c115aa6",
@@ -11807,7 +13054,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "quina_16x16.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "59f349a2-7e07-4d11-8234-1a3cddac9258",
@@ -11815,7 +13062,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "r.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "a204c861-ad04-41a1-9f2e-d7eec1cd8388",
@@ -11823,7 +13070,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "rato_animacao.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "41695a0b-45f5-4220-b9e6-81e9d197d3cc",
@@ -11831,7 +13078,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "selector.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -11839,7 +13086,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         },
         {
             "id": "fb8a29a6-2813-46bf-9bac-c7d2a200d7ec",
@@ -11847,22 +13094,46 @@
             "numFrames": 1,
             "type": "static",
             "filename": "trinity.png",
-            "_v": 1579748776972
+            "_v": 1579826108476
         }
     ],
     "music": [
         {
-            "id": "32c6a356-c346-407b-84e1-071287a6f4ee",
-            "name": "abriu",
-            "filename": "abriu.mod",
-            "_v": 1579748776972
+            "id": "2c64a361-f79d-45eb-b43e-41d7529acec9",
+            "name": "abriu3",
+            "filename": "abriu3.mod",
+            "_v": 1579826108476
+        },
+        {
+            "id": "dd08a145-3cb1-4126-938a-cb6a781f3ee5",
+            "name": "errou",
+            "filename": "errou.mod",
+            "_v": 1579826108476
+        },
+        {
+            "id": "28982317-475f-4ad1-b6d0-677a22632c64",
+            "name": "letra",
+            "filename": "letra.mod",
+            "_v": 1579826108476
+        },
+        {
+            "id": "0c8f7ed4-3d5d-4671-9895-0169c3319980",
+            "name": "seleção",
+            "filename": "seleção.mod",
+            "_v": 1579826108476
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1579748776972
+            "_v": 1579826108476
         }
     ],
-    "customEvents": []
+    "customEvents": [
+        {
+            "id": "55039ef9-e5bc-496b-868b-a696ceb78885",
+            "variables": {},
+            "actors": {}
+        }
+    ]
 }
