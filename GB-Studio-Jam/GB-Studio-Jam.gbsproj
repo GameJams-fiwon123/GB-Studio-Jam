@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1109,
-        "worldScrollY": 0,
-        "zoom": 225,
+        "worldScrollX": 748,
+        "worldScrollY": 100,
+        "zoom": 175,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -2327,12 +2327,20 @@
             "__type": "scene",
             "script": [
                 {
+                    "id": "71ed8e3f-c7d8-4ed2-a0dd-909fecf704ed",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "c78df288-ea13-4779-b3be-cef24f60a0fe",
+                        "loop": false
+                    }
+                },
+                {
                     "id": "3fda5112-32d8-4b1d-a209-62bca903291f",
                     "command": "EVENT_IF_FALSE",
                     "args": {
                         "variable": "24",
                         "__collapseElse": false,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -14900,7 +14908,19 @@
             "id": "fcefb7cb-71dc-4948-ba79-35666780924c",
             "name": "abriu6",
             "filename": "abriu6.mod",
-            "_v": 1579831601937
+            "_v": 1579834186289
+        },
+        {
+            "id": "fa5308ea-149e-42b1-9dd3-fcb71e42cf6e",
+            "name": "abriu7",
+            "filename": "abriu7.mod",
+            "_v": 1579834215291
+        },
+        {
+            "id": "3f735e71-ea04-4f7b-b4de-3cd53d2f45b8",
+            "name": "asd",
+            "filename": "asd.mod",
+            "_v": 1579835408724
         },
         {
             "id": "dd08a145-3cb1-4126-938a-cb6a781f3ee5",
@@ -14925,6 +14945,54 @@
             "name": "template",
             "filename": "template.mod",
             "_v": 1579831601937
+        },
+        {
+            "id": "c9bab766-d7d2-42c4-88c7-e15ac2ca1f75",
+            "name": "template.AutoSave.20200123.235904.mod",
+            "filename": "template.mod.AutoSave.20200123.235904.mod",
+            "_v": 1579834745291
+        },
+        {
+            "id": "32616e28-8ef9-45c8-bccd-4f2a24e57f49",
+            "name": "teste1",
+            "filename": "teste1.mod",
+            "_v": 1579835416347
+        },
+        {
+            "id": "20e67bac-d1f2-40f2-9aeb-4c8d4ae51543",
+            "name": "teste2",
+            "filename": "teste2.mod",
+            "_v": 1579835625803
+        },
+        {
+            "id": "b2d6a4e6-6d70-44a0-b523-664b19908bce",
+            "name": "teste3",
+            "filename": "teste3.mod",
+            "_v": 1579835680448
+        },
+        {
+            "id": "17b57ef2-160b-4490-ac93-8b928497bdf7",
+            "name": "teste4",
+            "filename": "teste4.mod",
+            "_v": 1579835689292
+        },
+        {
+            "id": "6d50c2ec-f62c-4f0a-ab41-e9d66144343a",
+            "name": "teste5",
+            "filename": "teste5.mod",
+            "_v": 1579835945617
+        },
+        {
+            "id": "c3af3a21-d98a-4b7c-98ae-3ad8250253db",
+            "name": "teste5.AutoSave.20200124.001904.mod",
+            "filename": "teste5.mod.AutoSave.20200124.001904.mod",
+            "_v": 1579835944400
+        },
+        {
+            "id": "c78df288-ea13-4779-b3be-cef24f60a0fe",
+            "name": "teste6",
+            "filename": "teste6.mod",
+            "_v": 1579835952641
         }
     ],
     "customEvents": []

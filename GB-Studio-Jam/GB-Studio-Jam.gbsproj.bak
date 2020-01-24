@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1109,
-        "worldScrollY": 1500,
-        "zoom": 225,
+        "worldScrollX": 748,
+        "worldScrollY": 300,
+        "zoom": 175,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -91,7 +91,7 @@
                                             "id": "e03bcde3-eadc-4f81-8445-a3e5a340c372",
                                             "command": "EVENT_SWITCH_SCENE",
                                             "args": {
-                                                "sceneId": "f8144974-9a2f-4210-9c0c-83e92c7a859a",
+                                                "sceneId": "54604311-8f1f-49df-bb2a-478c62efb2d7",
                                                 "x": 9,
                                                 "y": 7,
                                                 "direction": "left",
@@ -2327,12 +2327,20 @@
             "__type": "scene",
             "script": [
                 {
+                    "id": "71ed8e3f-c7d8-4ed2-a0dd-909fecf704ed",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "3f735e71-ea04-4f7b-b4de-3cd53d2f45b8",
+                        "loop": false
+                    }
+                },
+                {
                     "id": "3fda5112-32d8-4b1d-a209-62bca903291f",
                     "command": "EVENT_IF_FALSE",
                     "args": {
                         "variable": "24",
                         "__collapseElse": false,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -14900,7 +14908,19 @@
             "id": "fcefb7cb-71dc-4948-ba79-35666780924c",
             "name": "abriu6",
             "filename": "abriu6.mod",
-            "_v": 1579831601937
+            "_v": 1579834186289
+        },
+        {
+            "id": "fa5308ea-149e-42b1-9dd3-fcb71e42cf6e",
+            "name": "abriu7",
+            "filename": "abriu7.mod",
+            "_v": 1579834215291
+        },
+        {
+            "id": "3f735e71-ea04-4f7b-b4de-3cd53d2f45b8",
+            "name": "asd",
+            "filename": "asd.mod",
+            "_v": 1579835006289
         },
         {
             "id": "dd08a145-3cb1-4126-938a-cb6a781f3ee5",
@@ -14925,6 +14945,12 @@
             "name": "template",
             "filename": "template.mod",
             "_v": 1579831601937
+        },
+        {
+            "id": "c9bab766-d7d2-42c4-88c7-e15ac2ca1f75",
+            "name": "template.AutoSave.20200123.235904.mod",
+            "filename": "template.mod.AutoSave.20200123.235904.mod",
+            "_v": 1579834745291
         }
     ],
     "customEvents": []
