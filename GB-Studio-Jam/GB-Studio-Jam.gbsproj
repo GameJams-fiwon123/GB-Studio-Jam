@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1525,
-        "worldScrollY": 1343,
-        "zoom": 175,
+        "worldScrollX": 611,
+        "worldScrollY": 1594,
+        "zoom": 225,
         "customColorsWhite": "E2F8C6",
         "customColorsLight": "7FEB54",
         "customColorsDark": "7FEB54",
@@ -96,7 +96,7 @@
                                                 "sceneId": "54604311-8f1f-49df-bb2a-478c62efb2d7",
                                                 "x": 9,
                                                 "y": 5,
-                                                "direction": "left",
+                                                "direction": "down",
                                                 "fadeSpeed": "2"
                                             }
                                         },
@@ -314,6 +314,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "f90a6162-ffdb-4618-af49-60a1e24569f6",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "2fab70dd-27f8-48f6-9fa5-9c1e7dc32ac0",
                                                     "command": "EVENT_DEC_VALUE",
@@ -719,6 +728,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "e4d126dd-ad88-4e49-b619-8266645ec3e0",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "7bab87ea-482c-4481-a0d6-b9918c0ddbd7",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -1018,6 +1036,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "44966c8c-7f43-4460-aa93-1f7397aa4958",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "384b6202-6e62-452c-a23d-0903e6adfaa3",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -1226,6 +1253,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "59cb79f2-1685-4673-adad-03a54ed03ff2",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "050f1d85-5efb-4bb0-8372-11a9bbb68207",
                                                     "command": "EVENT_DEC_VALUE",
@@ -1940,6 +1976,14 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "8fbff8f9-bf0c-445d-95a9-635860fbbc34",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    }
+                                                },
                                                 {
                                                     "id": "3f19782d-08b1-4170-af8e-1fc94db9efb1",
                                                     "command": "EVENT_DEC_VALUE",
@@ -3140,6 +3184,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "c08d9893-1d1c-4c0d-8766-bd1e7ca25e54",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "d447cc54-5bbb-4a0e-8e3c-3ba4afa6321d",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -3807,6 +3860,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "7c81c262-d7a1-45df-b2e6-75690d82a722",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "46aaae75-02f4-4a94-a3e0-2f3fab663561",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -4102,6 +4164,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "ff1d5c2c-357d-49eb-b0e6-e63b2f7daeba",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "62576352-c47b-4acd-9012-5ab98b67d641",
                                                     "command": "EVENT_DEC_VALUE",
@@ -4491,9 +4562,9 @@
                 60,
                 0,
                 192,
-                3,
                 0,
-                48,
+                0,
+                0,
                 0,
                 0,
                 3,
@@ -4654,6 +4725,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "5b7a6999-b73a-48ed-9349-c763ae21668d",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "28130bc8-5429-4754-bdd1-c59b38293213",
                                                     "command": "EVENT_DEC_VALUE",
@@ -4908,6 +4988,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "df91dc5f-dd66-4c4a-8fcc-54dbfbec2b98",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "c79f832f-b5ac-4c22-b2e4-af1278e01f2f",
                                                     "command": "EVENT_DEC_VALUE",
@@ -5205,6 +5294,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "359fd999-df7b-4f2b-b3ee-b79b3d40c0ac",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "7d2aa385-a7af-41bd-9518-50e438bb5f34",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -5414,6 +5512,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "af3f6adf-096d-454c-8445-1ac5c8be2f54",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "24978166-e8bb-474a-94db-2edf129f0d5e",
                                                     "command": "EVENT_DEC_VALUE",
@@ -6153,6 +6260,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "218d9a26-9bed-4f9e-8c76-c0ba6df52f96",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "bab959da-3d66-4db2-9202-2a956d2417fe",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -6362,6 +6478,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "93844190-b710-474f-9c5c-e0566caf650d",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "ad292a02-3f9d-4a4a-94e9-67c3cc4d673c",
                                                     "command": "EVENT_DEC_VALUE",
@@ -6660,6 +6785,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "687a5711-db76-4126-994e-1cd2e9062fe8",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "8e15a25a-eb53-4f83-af85-3f1a5198d9bb",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -6912,6 +7046,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "d0b7a395-0f63-44c7-9247-38bbe2ef544a",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "b7873af5-eccf-43c7-8cba-dbd159796afe",
                                                     "command": "EVENT_DEC_VALUE",
@@ -7644,6 +7787,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "c60e459c-3c7f-4da0-a4de-b3fcc8b455f9",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "ac6565d4-1fb5-4418-818d-bbe7a78eee35",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -7854,6 +8006,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "a40cc58b-3854-4225-a6c7-af6f37d70f62",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "41c0597a-16f8-4ed4-ac11-71e05ece23fe",
                                                     "command": "EVENT_DEC_VALUE",
@@ -8107,6 +8268,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "0c5f5d90-b3bb-4a11-8881-f33a35a49198",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "ed34e70b-7ec3-4d48-940c-df974752f924",
                                                     "command": "EVENT_DEC_VALUE",
@@ -8902,6 +9072,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "2588a5c3-89fb-4c36-8d76-733b031f35b1",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "ffd12329-0c7c-4d64-9609-ee686255229d",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -9155,6 +9334,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "137ea50c-dc4d-4e25-815d-68a7a4a9312a",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "5ecac67c-f1c1-4a46-afc5-ff16a6a13222",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -9364,6 +9552,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "6f1995a4-2d71-47e3-b2b4-1d3123e11a01",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "1a33ebe7-3cce-4b98-b89f-af3a327c65b2",
                                                     "command": "EVENT_DEC_VALUE",
@@ -9660,6 +9857,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "d6ab6c79-8680-480b-a1a8-658ee57fb919",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "71fa4d0b-2671-43c8-b84a-82301673b0e6",
                                                     "command": "EVENT_DEC_VALUE",
@@ -10349,6 +10555,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "832cf010-f4af-4090-9476-8395f67e7358",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "54532c5e-96e8-4440-a8d4-4c45868583ba",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -10601,6 +10816,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "c1ff9fc5-86b6-4df0-9c34-ff9f9b835aba",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "c9edbd2a-794a-42a1-80f5-b5ed6e341183",
                                                     "command": "EVENT_DEC_VALUE",
@@ -10855,6 +11079,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "c0505d02-8b60-4ad1-aac7-028bc3ac2eae",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "29c631a6-fd8c-4bb6-bd6f-1ebde04bab39",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -11107,6 +11340,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "04fcd6f6-dc89-4948-93bc-73a1e6812e71",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "e6c73f02-94b2-4497-99c4-00662c15f9cd",
                                                     "command": "EVENT_DEC_VALUE",
@@ -11897,6 +12139,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "07077774-a2fa-4dcf-a317-d9190428f9af",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "2da74ac5-49b5-46fb-9e20-55a00bda5f65",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -12106,6 +12357,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "85631009-149c-4324-894e-7d5e152aba3c",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "b78c72c6-850c-4a7a-b725-dbf27d6ee561",
                                                     "command": "EVENT_DEC_VALUE",
@@ -12831,6 +13091,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "ebd90f37-15d8-4542-9a62-bdb93b56714e",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "ce27611e-7a6d-4bf1-a701-6b2764876006",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -13065,11 +13334,11 @@
                                         "args": {
                                             "variable": "L0",
                                             "items": 5,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "abremo",
-                                            "option5": "",
+                                            "option1": "Rato",
+                                            "option2": "Mato",
+                                            "option3": "Fato",
+                                            "option4": "Gato",
+                                            "option5": "Pato",
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
@@ -13158,6 +13427,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "e70d0f2f-9a49-4cf6-83d3-28b5d6fbafae",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "519ced8d-ccd3-4729-ab1d-40df8ea046d1",
                                                     "command": "EVENT_DEC_VALUE",
@@ -13456,6 +13734,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "90e882bb-fa7a-43b9-9eaa-e26212606009",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "9149f2a8-b103-4991-bc8c-867fd93e866e",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -13666,6 +13953,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "bf8f551e-463e-4aa0-a81a-b2108ac7d5ef",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "4f59e0a5-1dc9-4f05-9eb8-1c1a482c9f56",
                                                     "command": "EVENT_DEC_VALUE",
@@ -14410,6 +14706,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "ce936e0e-f572-4e44-b0b0-e2c58792f134",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "b90d7e87-90f1-429c-ac75-2c3a1a722a44",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -14706,6 +15011,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "4417a352-ca7c-4121-86ed-25720f6a719a",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "d9755a4d-4557-4bb8-a801-bcf684a885f9",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -14915,6 +15229,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "c1acfa94-a0b2-4dcd-8d3b-8b115abb4851",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "04b36889-c3f2-4089-a2b9-38d684e3245a",
                                                     "command": "EVENT_DEC_VALUE",
@@ -15723,6 +16046,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "1cf23d89-f2d6-44e0-88bb-d317f9b8d691",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "759c2fe1-a1c6-4a74-bd92-ad33e9d9c14b",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -16428,6 +16760,15 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "196d06d9-c47e-44a0-88e4-e68c498b3ab3",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "153de414-d456-4b3f-a07a-88ea5f2b89bc",
                                                     "command": "EVENT_DEC_VALUE",
                                                     "args": {
@@ -16679,6 +17020,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "1abdd2d2-cdff-4791-a4c1-3e156cb339f3",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "3bc5374b-0c88-4ae6-af3d-e4184c6cb9cc",
                                                     "command": "EVENT_DEC_VALUE",
@@ -16932,6 +17282,15 @@
                                                 }
                                             ],
                                             "false": [
+                                                {
+                                                    "id": "6b241827-d024-4851-9bb0-5d17d0c2c693",
+                                                    "command": "EVENT_MUSIC_PLAY",
+                                                    "args": {
+                                                        "musicId": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
+                                                        "loop": false
+                                                    },
+                                                    "__type": "event"
+                                                },
                                                 {
                                                     "id": "c03b82c3-43bd-4255-ac80-47d4052ecac1",
                                                     "command": "EVENT_DEC_VALUE",
