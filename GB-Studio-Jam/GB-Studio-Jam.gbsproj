@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1040,
-        "worldScrollY": 3058,
-        "zoom": 375,
+        "worldScrollX": 1729,
+        "worldScrollY": 643,
+        "zoom": 275,
         "customColorsWhite": "E2F8C6",
         "customColorsLight": "7FEB54",
         "customColorsDark": "7FEB54",
@@ -27,8 +27,8 @@
             "height": 18,
             "collisions": [],
             "id": "1bdaccca-09f2-4f33-a52b-9c8d2e893e8e",
-            "x": 811.714285714286,
-            "y": 53.42857142857142,
+            "x": 628.2857142857149,
+            "y": 47.71428571428571,
             "actors": [],
             "triggers": [],
             "script": [
@@ -93,9 +93,9 @@
                                             "id": "e03bcde3-eadc-4f81-8445-a3e5a340c372",
                                             "command": "EVENT_SWITCH_SCENE",
                                             "args": {
-                                                "sceneId": "54604311-8f1f-49df-bb2a-478c62efb2d7",
-                                                "x": 9,
-                                                "y": 5,
+                                                "sceneId": "693cd4bc-f136-4711-9f9b-9f26e1350928",
+                                                "x": 0,
+                                                "y": 0,
                                                 "direction": "down",
                                                 "fadeSpeed": "2"
                                             }
@@ -658,7 +658,7 @@
                                                 "Sala 02121109?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -666,14 +666,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "Cera",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "CARA",
+                                            "option2": "COCA",
+                                            "option3": "CASA",
+                                            "option4": "CERA",
+                                            "option5": "COLA",
+                                            "option6": "SALA",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -687,7 +687,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 1,
+                                            "comparator": 4,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -999,7 +999,7 @@
                                                 "O que há na\nsala 13?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -1247,7 +1247,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Senha da porta com\na NPC Joaninha."
+                                                "Qual é a Senha?"
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -1258,13 +1258,13 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "19",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "",
-                                            "option5": "",
-                                            "option6": "Sair",
+                                            "items": 7,
+                                            "option1": "5",
+                                            "option2": "11",
+                                            "option3": "17",
+                                            "option4": "19",
+                                            "option5": "23",
+                                            "option6": "Senhaz",
                                             "option7": "",
                                             "option8": "",
                                             "cancelOnB": true,
@@ -1279,7 +1279,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 1,
+                                            "comparator": 4,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -1530,7 +1530,10 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "12"
+                                    "Uma sala tem 4\nportas e cada\nporta leva à",
+                                    "outra sala que\ntambém tem 4\nportas. ",
+                                    "Ao todo são 5\nsalas. ",
+                                    "Quantas\nportas tem ao\ntodo?"
                                 ],
                                 "avatarId": ""
                             }
@@ -1974,8 +1977,8 @@
                 255
             ],
             "id": "54604311-8f1f-49df-bb2a-478c62efb2d7",
-            "x": 810.625152625152,
-            "y": 269.33577533577505,
+            "x": 822.6251526251525,
+            "y": 269.90720390720355,
             "actors": [
                 {
                     "spriteSheetId": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -2015,14 +2018,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "Chave",
-                                            "option3": "",
-                                            "option4": "",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "Queijo",
+                                            "option2": "Grana",
+                                            "option3": "Inseto",
+                                            "option4": "Papel",
+                                            "option5": "Chave",
+                                            "option6": "Saída",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -2036,7 +2039,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 2,
+                                            "comparator": 5,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -2047,6 +2050,13 @@
                                                     "command": "EVENT_SET_TRUE",
                                                     "args": {
                                                         "variable": "2"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "af276ddc-8af8-4f5b-bae5-205b3605f31d",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "25"
                                                     }
                                                 },
                                                 {
@@ -2313,14 +2323,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "2",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "1",
+                                            "option2": "2",
+                                            "option3": "3",
+                                            "option4": "4",
+                                            "option5": "5",
+                                            "option6": "6",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -2334,7 +2344,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -2346,6 +2356,14 @@
                                                     "args": {
                                                         "variable": "4"
                                                     }
+                                                },
+                                                {
+                                                    "id": "325c840a-153f-4f6a-b482-f911fb1fda66",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "25"
+                                                    },
+                                                    "__type": "event"
                                                 },
                                                 {
                                                     "id": "9318809d-bac7-4033-b0b8-fae51045c1f4",
@@ -2581,13 +2599,47 @@
                     "y": 12,
                     "script": [
                         {
-                            "id": "41ece576-66dd-4cf9-8929-7423b5356082",
-                            "command": "EVENT_TEXT",
+                            "id": "4dead8d3-b826-48be-ae0d-0f736f3c1836",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "text": [
-                                    "Olá, eu sou a\nmosca Gasmi. "
+                                "variable": "25",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "3c4da5a6-ebac-48db-b234-26e926681fb3",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Parece que não era\ntão difícil abrir\na porta.",
+                                                "A mosca Gasmi\ndeveria ser mais\natenta."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "15d59606-4462-4615-8b89-8e43e42ccab5",
+                                        "command": "EVENT_END"
+                                    }
                                 ],
-                                "avatarId": ""
+                                "false": [
+                                    {
+                                        "id": "41ece576-66dd-4cf9-8929-7423b5356082",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Olá! A mosca Gasmi\nestá a dias nesse \nlabirinto",
+                                                "e ainda não\nconseguiu sair\ndesta sala."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "0c4258da-59d6-404d-b464-c403efff1e16",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -3532,13 +3584,50 @@
                     "y": 9,
                     "script": [
                         {
-                            "id": "be0fb96b-bc65-466d-ba5e-681875ab782e",
-                            "command": "EVENT_TEXT",
+                            "id": "2bc4fa1a-16ee-4576-b6d2-0c0f2fddee96",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "text": [
-                                    "Ratoeiras da sala\n13 x ratoeiras da \nsala 16 - 1."
+                                "variable": "27",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "5bc15d6e-64c0-46d3-96ad-efb97c1c9004",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Você é\npraticamente uma\ncalculadora!"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "e8b32290-a74b-4f9e-8545-bc0686f75ea2",
+                                        "command": "EVENT_END"
+                                    }
                                 ],
-                                "avatarId": ""
+                                "false": [
+                                    {
+                                        "id": "be0fb96b-bc65-466d-ba5e-681875ab782e",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Sou péssima em\nmatemática! ",
+                                                " A resposta para\nadentrar a\nprimeira sala é o",
+                                                "resultado dessa\nconta:",
+                                                "Multiplique a\nquantidade de\nratoeiras",
+                                                "da sala  13 pela\nquantidade de\nratoeiras",
+                                                "da sala 16 e \nsubtraia 1 do\nresultado."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "fecc9867-0845-4923-927a-34729c587c36",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -4008,7 +4097,7 @@
                                                 "Sala 11091008?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -4016,14 +4105,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "Rabo",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "NOOB",
+                                            "option2": "RABO",
+                                            "option3": "CALO",
+                                            "option4": "GALO",
+                                            "option5": "OVOS",
+                                            "option6": "Sei lá",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -4037,7 +4126,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -5232,10 +5321,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "senha da sala 13\nao contrário."
+                                                "Como é a senha da\nsala 13 ao\ncontrário?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -5243,14 +5332,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "erba",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "ARBA",
+                                            "option2": "ERBA",
+                                            "option3": "IRBA",
+                                            "option4": "ORBA",
+                                            "option5": "URBA",
+                                            "option6": "OÃRBA",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -5264,7 +5353,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -5574,7 +5663,7 @@
                                                 "Sala 11091008?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -5823,10 +5912,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Letra na sala 5."
+                                                "Qual a letra da\nsala 5?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -5834,14 +5923,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "i",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "I",
+                                            "option2": "V",
+                                            "option3": "O",
+                                            "option4": "L",
+                                            "option5": "A",
+                                            "option6": "!",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -5855,7 +5944,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 1,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -6855,10 +6944,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Quantas baratas\nvocê viu até\nagora?"
+                                                "Quantas cores você\nvê no jogo?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -6866,14 +6955,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "3",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "1",
+                                            "option2": "2",
+                                            "option3": "3",
+                                            "option4": "4",
+                                            "option5": "256",
+                                            "option6": "FullHD",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -8518,7 +8607,7 @@
                                                 "Sala 09101112? "
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -8526,14 +8615,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "ABRE",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "ARCO",
+                                            "option2": "ABRE",
+                                            "option3": "ABRA",
+                                            "option4": "ABRO",
+                                            "option5": "ARRE",
+                                            "option6": "AHÃ!",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -8547,7 +8636,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -8810,10 +8899,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Sala 09101112? "
+                                                "Qual o número da\nsala ao sul? "
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -8821,14 +8910,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "ABRE",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "1",
+                                            "option2": "8",
+                                            "option3": "11",
+                                            "option4": "13",
+                                            "option5": "15",
+                                            "option6": "Sul?",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -10193,10 +10282,11 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Buracos da sala 10\nx baratas da sala\n14."
+                                                "Multiplique a\nquantidade de\nburacos da sala 10",
+                                                "pela quantidade de\nbaratas da sala\n14."
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -10204,14 +10294,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "15",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "1",
+                                            "option2": "6",
+                                            "option3": "9",
+                                            "option4": "12",
+                                            "option5": "15",
+                                            "option6": "18",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -10225,7 +10315,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 5,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -10764,7 +10854,25 @@
                     "animSpeed": "3",
                     "id": "7e29b0a3-a67c-4062-b0de-8a6d9207020d",
                     "x": 4,
-                    "y": 5
+                    "y": 5,
+                    "script": [
+                        {
+                            "id": "71217c70-8bd3-48ad-9bb3-72f3ae43b471",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "As teias de aranha\nsó servem",
+                                    "para eu \ncapturar minha\ncomida.",
+                                    "Cuidado!"
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "8f4b86d4-51d3-488a-b821-29e4920d6452",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ],
             "triggers": [
@@ -11274,7 +11382,7 @@
                                                 "Qual o nome da\nMosca?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -11282,14 +11390,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
+                                            "items": 7,
+                                            "option1": "Gosmi",
+                                            "option2": "Gisma",
+                                            "option3": "Gismo",
                                             "option4": "Gasmi",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "option5": "Gosma",
+                                            "option6": "Mosca",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -11577,14 +11685,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
+                                            "items": 7,
+                                            "option1": "15",
+                                            "option2": "11",
+                                            "option3": "9",
                                             "option4": "6",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "option5": "3",
+                                            "option6": "sala15",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -12159,7 +12267,7 @@
                                                 "Quantas portas tem\nno labirinto? "
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -12167,14 +12275,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
+                                            "items": 7,
+                                            "option1": "11",
+                                            "option2": "17",
+                                            "option3": "19",
                                             "option4": "21",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "option5": "29",
+                                            "option6": "Porta?",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -13239,10 +13347,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Quantas salas você\njá visitou?"
+                                                "Complete e frase:\nUse Z para Inte..."
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -13250,14 +13358,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "4",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "ligir",
+                                            "option2": "grar",
+                                            "option3": "ragir",
+                                            "option4": "gral",
+                                            "option5": "rior",
+                                            "option6": "l",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -13271,7 +13379,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 3,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -14375,7 +14483,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Password com\nletras de todas as\nsalas."
+                                                "Encontre a senha\ncorreta ",
+                                                "nas salas \nque só tem uma\nporta."
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -14386,14 +14495,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
+                                            "items": 7,
                                             "option1": "Rato",
                                             "option2": "Mato",
-                                            "option3": "Fato",
-                                            "option4": "Gato",
+                                            "option3": "Gato",
+                                            "option4": "Fato",
                                             "option5": "Pato",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "option6": "Xato",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -14407,7 +14516,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 3,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -14978,14 +15087,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "cima",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "Cima",
+                                            "option2": "Baixo",
+                                            "option3": "Direit",
+                                            "option4": "Esquer",
+                                            "option5": "Dentro",
+                                            "option6": "Fora",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -14999,7 +15108,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 1,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -15752,7 +15861,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "senha do papel do\nnpc lesma."
+                                                "Qual é a senha? "
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -15763,14 +15872,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "12",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "12",
+                                            "option2": "13",
+                                            "option3": "14",
+                                            "option4": "16",
+                                            "option5": "17",
+                                            "option6": "Lesma",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -15796,6 +15905,14 @@
                                                     "args": {
                                                         "variable": "21"
                                                     }
+                                                },
+                                                {
+                                                    "id": "de4e79e5-c458-45f7-b5ab-8dbae901d63e",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "26"
+                                                    },
+                                                    "__type": "event"
                                                 },
                                                 {
                                                     "id": "bf15ff08-2ca6-4f02-9a09-6d8446c989a1",
@@ -16093,7 +16210,7 @@
                                                 "Qual o nome da\nMosca?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -16353,14 +16470,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "morceg",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "Barata",
+                                            "option2": "Morceg",
+                                            "option3": "Mosca",
+                                            "option4": "Lesma",
+                                            "option5": "Buraco",
+                                            "option6": "Sala8?",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -16374,7 +16491,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -16621,13 +16738,47 @@
                     "y": 5,
                     "script": [
                         {
-                            "id": "a5841562-2511-4714-a4ed-88169c44c83c",
-                            "command": "EVENT_TEXT",
+                            "id": "97d5a880-162e-40ef-b16e-d74ca753e99c",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "text": [
-                                    "Eu perdi a senha\nda porta em alguma\nsala."
+                                "variable": "26",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "830c9210-65df-463e-a64e-03bde8777a7e",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Agora eu consigo\nsair deste\nlabirinto.",
+                                                "Muito obrigado!"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "953905c7-0bc4-416c-ad3a-6c6b9e6b8ca0",
+                                        "command": "EVENT_END"
+                                    }
                                 ],
-                                "avatarId": ""
+                                "false": [
+                                    {
+                                        "id": "a5841562-2511-4714-a4ed-88169c44c83c",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Meu bolso está\nfurado. ",
+                                                "Perdi o\npapel com a senha\nda porta."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "6a515ae2-42e6-4d51-a3ae-d972635d0874",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -17938,10 +18089,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Jogo na sala 16."
+                                                "De qual jogo é o\nsímbolo guardado\nna sala 16?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -17949,14 +18100,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "Zelda",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "Mario",
+                                            "option2": "Zelda",
+                                            "option3": "Kirby",
+                                            "option4": "Pacman",
+                                            "option5": "DK",
+                                            "option6": "XBOX",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -17970,7 +18121,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -18527,10 +18678,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Qual o núnero da\nsala?"
+                                                "Essa porta fica\nentre quais salas?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -18538,14 +18689,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "8",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "1 e 3",
+                                            "option2": "4 e 6",
+                                            "option3": "7 e 9",
+                                            "option4": "10+",
+                                            "option5": "Porta?",
+                                            "option6": "SeiNão",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -18559,7 +18710,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 3,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -19125,13 +19276,59 @@
         },
         {
             "name": "Game Over",
-            "backgroundId": "cac5c4db-41e3-4c1d-b1c9-2a3db55ba919",
+            "backgroundId": "5d32f964-19fd-4ac1-baf0-c44c4a75a88f",
             "width": 20,
             "height": 18,
-            "collisions": [],
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
             "id": "b0844902-8874-4a51-b86c-a212dd4e6444",
-            "x": 1075.9999999999998,
-            "y": 56.4,
+            "x": 1096.5714285714282,
+            "y": 43.82857142857143,
             "actors": [],
             "triggers": [],
             "script": [
@@ -19140,6 +19337,22 @@
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
                         "actorId": "player"
+                    }
+                },
+                {
+                    "id": "d4a47e0e-6ed9-40f8-a780-eb82e8878ebd",
+                    "command": "EVENT_MUSIC_STOP",
+                    "args": {}
+                },
+                {
+                    "id": "c45e8c53-1766-4c0f-85dd-ce330d2f3504",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Ratos não são\nmais\ninteligentes que",
+                            "os seres humanos\n. Fim da\nexperiência."
+                        ],
+                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9"
                     }
                 },
                 {
@@ -19154,11 +19367,6 @@
                     }
                 },
                 {
-                    "id": "d4a47e0e-6ed9-40f8-a780-eb82e8878ebd",
-                    "command": "EVENT_MUSIC_STOP",
-                    "args": {}
-                },
-                {
                     "id": "4f2d01fa-e15a-4c9e-bb94-c98603789d5e",
                     "command": "EVENT_END"
                 }
@@ -19166,13 +19374,13 @@
         },
         {
             "name": "Win",
-            "backgroundId": "cac5c4db-41e3-4c1d-b1c9-2a3db55ba919",
+            "backgroundId": "0801a0bb-113a-448d-afe9-57feb1d962f9",
             "width": 20,
             "height": 18,
             "collisions": [],
             "id": "e32af5a2-495a-48cf-86ff-947d9ae2a5db",
-            "x": 759.9999999999997,
-            "y": 1085.3333333333348,
+            "x": 666.2857142857146,
+            "y": 1062.4761904761906,
             "actors": [],
             "triggers": [],
             "script": [
@@ -19189,10 +19397,34 @@
                     }
                 },
                 {
+                    "id": "3e93defb-b999-46a2-ba71-4e2c45919611",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Experiência\nconcluída com\nêxito!",
+                            "Os ratos\nrealmente são\nmais inteligente",
+                            "que os seres\nhumanos.",
+                            "Essa descoberta\nmudará os rumos\nda ciência!"
+                        ],
+                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9"
+                    }
+                },
+                {
+                    "id": "0834ef00-9795-4342-bc78-a91b48d44138",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Alguns passos\npara um rato,",
+                            "mas um grande\npasso para a\nhumanidade."
+                        ],
+                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9"
+                    }
+                },
+                {
                     "id": "8aae4d54-5494-4f64-a47e-f80ab9769e1e",
                     "command": "EVENT_SWITCH_SCENE",
                     "args": {
-                        "sceneId": "1bdaccca-09f2-4f33-a52b-9c8d2e893e8e",
+                        "sceneId": "f0e085eb-3656-45f5-8e24-a514b60ad9cc",
                         "x": 0,
                         "y": 0,
                         "direction": "up",
@@ -19212,8 +19444,8 @@
             "height": 18,
             "collisions": [],
             "id": "884e4bd5-fc50-4e9e-9978-1fe3ab9c01cd",
-            "x": 562.8571428571425,
-            "y": 49.42857142857144,
+            "x": 390.28571428571394,
+            "y": 48.85714285714287,
             "actors": [],
             "triggers": [],
             "script": [
@@ -19245,6 +19477,245 @@
                 },
                 {
                     "id": "4fdd996a-d480-4472-a7fb-9f4984ac91bc",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "name": "Story",
+            "backgroundId": "8fb38d8d-045d-4e2f-b39b-b7b920fe1978",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "693cd4bc-f136-4711-9f9b-9f26e1350928",
+            "x": 837.1428571428571,
+            "y": 41.42857142857142,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "fc42ef9c-7adf-4ac0-897a-0dae105730fe",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "26b3cba8-fc2f-4182-8a0c-c3fa11c10ea3",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "2430f89b-b915-4dbe-927c-20656f06b9f8",
+                        "loop": true
+                    }
+                },
+                {
+                    "id": "5d4cbb8b-6bc7-49df-a720-5eb59f8c601f",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Cientistas\nbrasileiros farão\nagora",
+                            "a experiência\ndecisiva que\nprovará que",
+                            "ratos são mais\ninteligentes que\nhumanos."
+                        ],
+                        "avatarId": "",
+                        "__collapse": false
+                    }
+                },
+                {
+                    "id": "bad3bc7b-4af5-488f-9535-ba7977acb264",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Ele tem 60\nminutos\npara responder",
+                            "as charadas\ncorretamente,\nabrir as portas",
+                            "e sair do\nlabirinto."
+                        ],
+                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9",
+                        "__collapse": false
+                    }
+                },
+                {
+                    "id": "03b77724-df14-4f65-a57b-748ccda14777",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Mas ratos sabem\nler?"
+                        ],
+                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9",
+                        "__collapse": false
+                    }
+                },
+                {
+                    "id": "14560dcb-6b8c-4710-ac76-c61e40df3d4a",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Veremos isso\ntambém..."
+                        ],
+                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9"
+                    }
+                },
+                {
+                    "id": "f91731ee-025c-4489-bcb9-f3126c6ac400",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "54604311-8f1f-49df-bb2a-478c62efb2d7",
+                        "x": 9,
+                        "y": 5,
+                        "direction": "down",
+                        "fadeSpeed": "2"
+                    }
+                },
+                {
+                    "id": "9e139d5a-e22d-4410-92f4-69f1e3aff82b",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "name": "Win2",
+            "backgroundId": "0ec28554-d4c7-42de-8b1c-3fb7fe093a18",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "f0e085eb-3656-45f5-8e24-a514b60ad9cc",
+            "x": 870.2857142857144,
+            "y": 1063.4285714285713,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "cca681a6-0300-4ba4-9269-3722ebec7b83",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "48cd098d-d4be-41e5-aac9-b5158e1061bc",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Experiência\nconcluída com\nêxito!",
+                            "Os humanos\nrealmente são\ninteligentes",
+                            "o suficiente para\nreconhecer que",
+                            "nós somos mais\ninteligentes que\neles."
+                        ],
+                        "avatarId": ""
+                    }
+                },
+                {
+                    "id": "fc98247b-5dea-4c83-a079-c55506dbec2e",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Elementar, meu\ncaro Ratson!"
+                        ],
+                        "avatarId": ""
+                    }
+                },
+                {
+                    "id": "451c150b-00b4-40e1-9dae-44cd288b2320",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "0bb5c369-dca9-4bba-8a81-681e54c2cb0f",
+                        "x": 0,
+                        "y": 0,
+                        "direction": "",
+                        "fadeSpeed": "2"
+                    }
+                },
+                {
+                    "id": "7ff7d6d5-6c5b-4f94-8bd7-5ddbecaf7da5",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "name": "End",
+            "backgroundId": "17698fa0-22e9-4f59-8913-8f197c210dd0",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "0bb5c369-dca9-4bba-8a81-681e54c2cb0f",
+            "x": 1075.9999999999995,
+            "y": 1056.0000000000002,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "2309197a-d5cf-4fdb-baf6-2f0b77658c65",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "80ac4347-72a4-494a-b425-5c325c3e775b",
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 2
+                    }
+                },
+                {
+                    "id": "307d68ff-b398-4a80-bdbf-6d15022c179b",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "1bdaccca-09f2-4f33-a52b-9c8d2e893e8e",
+                        "x": 0,
+                        "y": 0,
+                        "direction": "",
+                        "fadeSpeed": "2"
+                    }
+                },
+                {
+                    "id": "3e581be3-e6e0-4114-bc4c-7d1c62330435",
                     "command": "EVENT_END"
                 }
             ]
@@ -19365,9 +19836,51 @@
         {
             "id": "24",
             "name": "tutorial"
+        },
+        {
+            "id": "25",
+            "name": "openFirstDoor"
+        },
+        {
+            "id": "26",
+            "name": "OpenDoorLesma"
+        },
+        {
+            "id": "27",
+            "name": "OpenDoorJoaninha"
         }
     ],
     "backgrounds": [
+        {
+            "id": "0801a0bb-113a-448d-afe9-57feb1d962f9",
+            "name": "Fim_1",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Fim_1.png",
+            "_v": 1580090951282
+        },
+        {
+            "id": "0ec28554-d4c7-42de-8b1c-3fb7fe093a18",
+            "name": "Fim_2",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Fim_2.png",
+            "_v": 1580091246282
+        },
+        {
+            "id": "17698fa0-22e9-4f59-8913-8f197c210dd0",
+            "name": "Fim_3",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Fim_3.png",
+            "_v": 1580091406281
+        },
         {
             "id": "9f49c51d-755d-47f1-8f2e-19a020b7079a",
             "name": "GB_Logo_Siricutico",
@@ -19376,27 +19889,17 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "GB_Logo_Siricutico.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
-            "id": "5348ced2-3e1c-4949-9e17-9a45ad567ce2",
-            "name": "logo",
+            "id": "5d32f964-19fd-4ac1-baf0-c44c4a75a88f",
+            "name": "Game_Over",
             "width": 20,
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "logo.png",
-            "_v": 1580017029119
-        },
-        {
-            "id": "cac5c4db-41e3-4c1d-b1c9-2a3db55ba919",
-            "name": "placeholder",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "placeholder.png",
-            "_v": 1580017029119
+            "filename": "Game_Over.png",
+            "_v": 1580090803025
         },
         {
             "id": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
@@ -19406,7 +19909,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "4286829e-cb76-4c8d-a76b-932c23b71d8d",
@@ -19416,7 +19919,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room1.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "2a0fa7fc-7c21-4484-bf86-79a4de5cfeec",
@@ -19426,7 +19929,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room10.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "a3ad666c-f74c-496a-ad31-91ff8d56b976",
@@ -19436,7 +19939,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room11.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "39774600-9f2f-4959-a499-b2e65a25d880",
@@ -19446,7 +19949,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room12.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "86d9a995-8fd4-488b-8c2e-2edccef9ad53",
@@ -19456,7 +19959,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room13.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "62f62e44-6d4b-43ff-9fb5-15c942914816",
@@ -19466,7 +19969,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room14.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "f8987c61-ea7e-4c5b-a537-05163fc5b778",
@@ -19476,7 +19979,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room15.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "d49e9e17-8a9e-4a98-bf25-c7633d49c4ba",
@@ -19486,7 +19989,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room16.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "9467a840-ab34-4261-b359-85941b91934f",
@@ -19496,7 +19999,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room2.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "d7105c2a-cbe9-4043-b168-55909ba359b9",
@@ -19506,7 +20009,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room3.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "37d21afe-6ed8-4fe5-9331-1712d6f84618",
@@ -19516,7 +20019,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room4.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "b10c05de-1d00-46af-af7c-46a099c737ca",
@@ -19526,7 +20029,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room5.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "fcc773f2-17ff-4c54-af6b-909c49116ee2",
@@ -19536,7 +20039,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room6.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "b7471259-e7d4-47f2-9e12-8eab3e9031a7",
@@ -19546,7 +20049,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room7.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "b998fb1c-c0a4-4023-ae9d-17f24c0622ee",
@@ -19556,7 +20059,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room8.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "cd8eda99-6644-414d-9c99-8310c50a7386",
@@ -19566,7 +20069,37 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room9.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
+        },
+        {
+            "id": "8fb38d8d-045d-4e2f-b39b-b7b920fe1978",
+            "name": "historia",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "historia.png",
+            "_v": 1580090803025
+        },
+        {
+            "id": "5348ced2-3e1c-4949-9e17-9a45ad567ce2",
+            "name": "logo",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "logo.png",
+            "_v": 1580090803025
+        },
+        {
+            "id": "cac5c4db-41e3-4c1d-b1c9-2a3db55ba919",
+            "name": "placeholder",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "placeholder.png",
+            "_v": 1580090803025
         },
         {
             "id": "70a9d7a0-606e-4f23-91f1-566f3b4bded5",
@@ -19576,7 +20109,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         }
     ],
     "spriteSheets": [
@@ -19586,7 +20119,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Buraco_16x16.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "f61aa8af-0c21-4557-950c-b41e99f490db",
@@ -19594,7 +20127,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "NPC_Aranha.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "f2c8c4d4-b4eb-4c5f-822e-4a631f539dc0",
@@ -19602,7 +20135,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "NPC_Lesma.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "0d34ed82-a795-4bf1-a461-5b679e096bd6",
@@ -19610,7 +20143,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "NPC_Mosca.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "ee6455e3-0bb4-494e-b980-cc8a43d506d6",
@@ -19618,7 +20151,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "NPC_joaninha.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "8100cfdd-4deb-4d1a-8aa3-f0a894469493",
@@ -19626,7 +20159,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Parede_16x16.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "70b207e7-05f6-46a8-8426-154683417563",
@@ -19634,7 +20167,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "Rato_parado.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "285bc766-d9a0-450b-bd11-bd56722a571c",
@@ -19642,7 +20175,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "a.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -19650,7 +20183,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -19658,7 +20191,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "3d0081eb-edc9-4902-b506-9fb93adba5d6",
@@ -19666,7 +20199,7 @@
             "numFrames": 25,
             "type": "animated",
             "filename": "alphabet-1.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "e7e1d9d5-c762-4416-8cb9-5d0746da7c09",
@@ -19674,7 +20207,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "b.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "524499c3-b44a-40d4-9f0a-f4fb60b45a74",
@@ -19682,7 +20215,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "barata_16x16.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "2e4fa395-5fa4-4963-bcba-e70334124474",
@@ -19690,7 +20223,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "c.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "066d584f-17e4-4e3e-8881-ed2ab7b74a63",
@@ -19698,7 +20231,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "chave.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
+        },
+        {
+            "id": "4723a920-0be4-46d3-ba83-d1ec1540fef9",
+            "name": "cientista_pro_dialogo",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "cientista_pro_dialogo.png",
+            "_v": 1580090803025
         },
         {
             "id": "4e93ef72-5294-44d3-953f-84bfce0eea49",
@@ -19706,7 +20247,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "credits.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -19714,7 +20255,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "doors.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "d47c6077-035a-4abb-a40e-ab2fbf144f0a",
@@ -19722,7 +20263,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "e.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "ed6b8755-9771-4dff-b4bb-18ec69b22e53",
@@ -19730,7 +20271,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "i.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "3b85d30d-eeea-4495-8b5e-0b19c7ff6cd5",
@@ -19738,7 +20279,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "m.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
@@ -19746,7 +20287,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "morcego_16x16.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "91581f70-b831-40de-b454-09594827884e",
@@ -19754,7 +20295,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "o.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "ed2fff22-b3cc-4a5d-bef6-4b0c2837460e",
@@ -19762,7 +20303,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "paper.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "a9bb9b11-ef78-4de5-9544-7dbdad820787",
@@ -19770,7 +20311,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "porta_aberta_16x16.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "d64579dd-9176-4adb-95b6-9d62507a86f1",
@@ -19778,7 +20319,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "porta_fechada_16x16.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "0e2bd949-8dac-4490-8137-04becf4e5e89",
@@ -19786,7 +20327,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "porta_final.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "6e50b6a0-3711-4075-8f2e-f040f8c4e0c2",
@@ -19794,7 +20335,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "porta_final_aberta..png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "cc3f4208-b6fd-48f8-b448-b2fb2c115aa6",
@@ -19802,7 +20343,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "quina_16x16.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "59f349a2-7e07-4d11-8234-1a3cddac9258",
@@ -19810,7 +20351,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "r.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "a204c861-ad04-41a1-9f2e-d7eec1cd8388",
@@ -19818,7 +20359,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "rato_animacao.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "41695a0b-45f5-4220-b9e6-81e9d197d3cc",
@@ -19826,7 +20367,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "selector.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -19834,7 +20375,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "fb8a29a6-2813-46bf-9bac-c7d2a200d7ec",
@@ -19842,7 +20383,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "trinity.png",
-            "_v": 1580017029119
+            "_v": 1580090803025
         }
     ],
     "music": [
@@ -19850,37 +20391,37 @@
             "id": "f63beeb0-7575-4847-931a-fded6168341e",
             "name": "abriu2",
             "filename": "abriu2.mod",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "8fbe1150-2673-44bf-a1c0-6b66a171aeeb",
             "name": "acertou2",
             "filename": "acertou2.mod",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
             "name": "errou2",
             "filename": "errou2.mod",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "23fbf33d-cc50-47f6-9552-45c6611a24d2",
             "name": "gameplay2",
             "filename": "gameplay2.mod",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "2430f89b-b915-4dbe-927c-20656f06b9f8",
             "name": "historia",
             "filename": "historia.mod",
-            "_v": 1580017029119
+            "_v": 1580090803025
         },
         {
             "id": "0ff8e84b-2680-4ed5-ae77-22f7e00bdc02",
             "name": "letra2",
             "filename": "letra2.mod",
-            "_v": 1580017029119
+            "_v": 1580090803025
         }
     ],
     "customEvents": []
