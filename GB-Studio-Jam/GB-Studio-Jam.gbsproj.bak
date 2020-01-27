@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1218,
-        "worldScrollY": 1443,
-        "zoom": 275,
+        "worldScrollX": 2014,
+        "worldScrollY": 2560,
+        "zoom": 325,
         "customColorsWhite": "E2F8C6",
         "customColorsLight": "7FEB54",
         "customColorsDark": "7FEB54",
@@ -22,7 +22,7 @@
     "scenes": [
         {
             "name": "Title Screen",
-            "backgroundId": "70a9d7a0-606e-4f23-91f1-566f3b4bded5",
+            "backgroundId": "c26a0501-3b99-46d9-9925-05705a414d58",
             "width": 20,
             "height": 18,
             "collisions": [],
@@ -40,11 +40,19 @@
                     }
                 },
                 {
+                    "id": "8d984f60-d442-4307-bfc2-46e2c123f9bd",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "caf056fa-0478-4683-864d-21b466faf939",
+                        "loop": true
+                    }
+                },
+                {
                     "id": "70e50b66-3684-4a7c-a5c0-d111725de606",
                     "command": "EVENT_SET_INPUT_SCRIPT",
                     "args": {
                         "input": "start",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -209,7 +217,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Senha da porta com\na NPC Joaninha."
+                                                "Qual é a Senha?"
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -220,13 +228,13 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "Cera",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "",
-                                            "option5": "",
-                                            "option6": "Sair",
+                                            "items": 7,
+                                            "option1": "5",
+                                            "option2": "11",
+                                            "option3": "17",
+                                            "option4": "19",
+                                            "option5": "23",
+                                            "option6": "Senhaz",
                                             "option7": "",
                                             "option8": "",
                                             "cancelOnB": true,
@@ -241,7 +249,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 1,
+                                            "comparator": 4,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -1007,14 +1015,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "Chave",
-                                            "option3": "",
-                                            "option4": "",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "Queijo",
+                                            "option2": "Grana",
+                                            "option3": "Inseto",
+                                            "option4": "Papel",
+                                            "option5": "Chave",
+                                            "option6": "Saída",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -1028,7 +1036,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 2,
+                                            "comparator": 5,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -2630,7 +2638,7 @@
                                         "args": {
                                             "text": [
                                                 "Olá! A mosca Gasmi\nestá a dias nesse \nlabirinto",
-                                                "e ainda não\nconseguiu sair da\nprimeira sala."
+                                                "e ainda não\nconseguiu sair\ndesta sala."
                                             ],
                                             "avatarId": ""
                                         }
@@ -3348,10 +3356,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Jogo na sala 16."
+                                                "De qual jogo é o\nsímbolo guardado\nna sala 16?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -3359,14 +3367,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "Zelda",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "Mario",
+                                            "option2": "Zelda",
+                                            "option3": "Kirby",
+                                            "option4": "Pacman",
+                                            "option5": "DK",
+                                            "option6": "XBOX",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -3380,7 +3388,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -3614,10 +3622,11 @@
                                         "args": {
                                             "text": [
                                                 "Sou péssima em\nmatemática! ",
-                                                " A resposta para\nadentrar a última\nsala é o resultado",
-                                                "dessa conta:\nMultiplique a\nquantidade",
-                                                "de ratoeiras da\nsala 13 pela\nquantidade",
-                                                "de ratoeiras da\nsala 16 e subtraia\n1 do resultado."
+                                                " A resposta para\nadentrar a\nprimeira sala é o",
+                                                "resultado dessa\nconta:",
+                                                "Multiplique a\nquantidade de\nratoeiras",
+                                                "da sala  13 pela\nquantidade de\nratoeiras",
+                                                "da sala 16 e \nsubtraia 1 do\nresultado."
                                             ],
                                             "avatarId": ""
                                         }
@@ -4431,10 +4440,12 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Sala 09101112? "
+                                                "Se a próxima\nsala tivesse\numa porta ao sul,",
+                                                "qual seria o\nnúmero da sala\nseguinte",
+                                                "a essa porta?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -4442,14 +4453,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "ABRE",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "1",
+                                            "option2": "8",
+                                            "option3": "11",
+                                            "option4": "13",
+                                            "option5": "15",
+                                            "option6": "Sul?",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -5028,7 +5039,7 @@
                                                 "Sala 02121109?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -5036,14 +5047,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "Cera",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "CARA",
+                                            "option2": "COCA",
+                                            "option3": "CASA",
+                                            "option4": "CERA",
+                                            "option5": "COLA",
+                                            "option6": "SALA",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -5057,7 +5068,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 1,
+                                            "comparator": 4,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -5670,14 +5681,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "Rabo",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "NOOB",
+                                            "option2": "RABO",
+                                            "option3": "CALO",
+                                            "option4": "GALO",
+                                            "option5": "OVOS",
+                                            "option6": "Sei lá",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -5691,7 +5702,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -6691,7 +6702,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Quantas portas tem\nnessa sala?"
+                                                "Quantas portas tem\nna sala seguinte?"
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -6702,14 +6713,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "2",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "1",
+                                            "option2": "2",
+                                            "option3": "3",
+                                            "option4": "4",
+                                            "option5": "5",
+                                            "option6": "6",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -6723,7 +6734,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -7281,10 +7292,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "senha da sala 13\nao contrário."
+                                                "Como é a senha da\nsala 13 ao\ncontrário?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -7292,14 +7303,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "erba",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "ARBA",
+                                            "option2": "ERBA",
+                                            "option3": "IRBA",
+                                            "option4": "ORBA",
+                                            "option5": "URBA",
+                                            "option6": "OÃRBA",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -7313,7 +7324,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -7580,7 +7591,7 @@
                                                 "Quantas portas tem\nno labirinto? "
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -7588,14 +7599,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
+                                            "items": 7,
+                                            "option1": "11",
+                                            "option2": "17",
+                                            "option3": "19",
                                             "option4": "21",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "option5": "29",
+                                            "option6": "Porta?",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -8350,10 +8361,11 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Buracos da sala 10\nx baratas da sala\n14."
+                                                "Multiplique a\nquantidade de\nburacos da sala 10",
+                                                "pela quantidade de\nbaratas da sala\n14."
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -8361,14 +8373,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "15",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "1",
+                                            "option2": "6",
+                                            "option3": "9",
+                                            "option4": "12",
+                                            "option5": "15",
+                                            "option6": "18",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -8382,7 +8394,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 5,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -9745,14 +9757,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "cima",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "Cima",
+                                            "option2": "Baixo",
+                                            "option3": "Direit",
+                                            "option4": "Esquer",
+                                            "option5": "Dentro",
+                                            "option6": "Fora",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -9766,7 +9778,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 1,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -10040,14 +10052,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
+                                            "items": 7,
+                                            "option1": "15",
+                                            "option2": "11",
+                                            "option3": "9",
                                             "option4": "6",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "option5": "3",
+                                            "option6": "sala15",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -10620,10 +10632,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Letra na sala 5."
+                                                "Qual a letra da\nsala 5?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -10631,14 +10643,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "i",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "I",
+                                            "option2": "V",
+                                            "option3": "O",
+                                            "option4": "L",
+                                            "option5": "A",
+                                            "option6": "!",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -10652,7 +10664,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 1,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -11968,10 +11980,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Quantas salas você\njá visitou?"
+                                                "Complete a frase:\nUse Z para Inte..."
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -11979,14 +11991,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "4",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "ligir",
+                                            "option2": "grar",
+                                            "option3": "ragir",
+                                            "option4": "gral",
+                                            "option5": "rior",
+                                            "option6": "l",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -12000,7 +12012,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 3,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -13094,10 +13106,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Qual o núnero da\nsala?"
+                                                "Essa porta fica\nentre quais salas?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -13105,14 +13117,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "8",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "1 e 3",
+                                            "option2": "4 e 6",
+                                            "option3": "7 e 9",
+                                            "option4": "10+",
+                                            "option5": "Porta?",
+                                            "option6": "SeiNão",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -13126,7 +13138,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 3,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -13346,7 +13358,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Complete e frase:\nUse Z para Inte..."
+                                                "Complete a frase:\nUse Z para Inte..."
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -14115,7 +14127,7 @@
                                                 "Sala 09101112? "
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -14123,14 +14135,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "ABRE",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "ARCO",
+                                            "option2": "ABRE",
+                                            "option3": "ABRA",
+                                            "option4": "ABRO",
+                                            "option5": "ARRE",
+                                            "option6": "AHÃ!",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -14144,7 +14156,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -14833,14 +14845,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "morceg",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "Barata",
+                                            "option2": "Morceg",
+                                            "option3": "Mosca",
+                                            "option4": "Lesma",
+                                            "option5": "Buraco",
+                                            "option6": "Sala8?",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -14854,7 +14866,7 @@
                                         "args": {
                                             "variable": "L0",
                                             "operator": "==",
-                                            "comparator": 4,
+                                            "comparator": 2,
                                             "__collapseElse": false,
                                             "__collapse": false
                                         },
@@ -16217,14 +16229,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
+                                            "items": 7,
+                                            "option1": "Gosmi",
+                                            "option2": "Gisma",
+                                            "option3": "Gismo",
                                             "option4": "Gasmi",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "option5": "Gosma",
+                                            "option6": "Mosca",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -17341,7 +17353,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "senha do papel do\nnpc lesma."
+                                                "Qual é a senha?"
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -17352,14 +17364,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "12",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "12",
+                                            "option2": "13",
+                                            "option3": "14",
+                                            "option4": "16",
+                                            "option5": "17",
+                                            "option6": "Lesma",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -18382,10 +18394,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Quantas baratas\nvocê viu até\nagora?"
+                                                "Quantas cores você\nvê no jogo?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -18393,14 +18405,14 @@
                                         "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "items": 6,
-                                            "option1": "",
-                                            "option2": "",
-                                            "option3": "",
-                                            "option4": "3",
-                                            "option5": "",
-                                            "option6": "Sair",
-                                            "option7": "",
+                                            "items": 7,
+                                            "option1": "1",
+                                            "option2": "2",
+                                            "option3": "3",
+                                            "option4": "4",
+                                            "option5": "256",
+                                            "option6": "FullHD",
+                                            "option7": "Sair",
                                             "option8": "",
                                             "cancelOnB": true,
                                             "layout": "dialogue",
@@ -19351,7 +19363,7 @@
                             "Ratos não são\nmais\ninteligentes que",
                             "os seres humanos\n. Fim da\nexperiência."
                         ],
-                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9"
+                        "avatarId": ""
                     }
                 },
                 {
@@ -19405,7 +19417,7 @@
                             "que os seres\nhumanos.",
                             "Essa descoberta\nmudará os rumos\nda ciência!"
                         ],
-                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9"
+                        "avatarId": ""
                     }
                 },
                 {
@@ -19416,7 +19428,7 @@
                             "Alguns passos\npara um rato,",
                             "mas um grande\npasso para a\nhumanidade."
                         ],
-                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9"
+                        "avatarId": ""
                     }
                 },
                 {
@@ -19575,7 +19587,7 @@
                             "as charadas\ncorretamente,\nabrir as portas",
                             "e sair do\nlabirinto."
                         ],
-                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9",
+                        "avatarId": "",
                         "__collapse": false
                     }
                 },
@@ -19586,7 +19598,7 @@
                         "text": [
                             "Mas ratos sabem\nler?"
                         ],
-                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9",
+                        "avatarId": "",
                         "__collapse": false
                     }
                 },
@@ -19597,7 +19609,8 @@
                         "text": [
                             "Veremos isso\ntambém..."
                         ],
-                        "avatarId": "4723a920-0be4-46d3-ba83-d1ec1540fef9"
+                        "avatarId": "",
+                        "__collapse": false
                     }
                 },
                 {
@@ -19858,7 +19871,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Fim_1.png",
-            "_v": 1580090951282
+            "_v": 1580159386298
         },
         {
             "id": "0ec28554-d4c7-42de-8b1c-3fb7fe093a18",
@@ -19868,7 +19881,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Fim_2.png",
-            "_v": 1580091246282
+            "_v": 1580159386298
         },
         {
             "id": "17698fa0-22e9-4f59-8913-8f197c210dd0",
@@ -19878,17 +19891,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Fim_3.png",
-            "_v": 1580091406281
-        },
-        {
-            "id": "9f49c51d-755d-47f1-8f2e-19a020b7079a",
-            "name": "GB_Logo_Siricutico",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "GB_Logo_Siricutico.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "5d32f964-19fd-4ac1-baf0-c44c4a75a88f",
@@ -19898,177 +19901,17 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Game_Over.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
-            "id": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
-            "name": "Room",
+            "id": "9f49c51d-755d-47f1-8f2e-19a020b7079a",
+            "name": "GB_Logo_Siricutico",
             "width": 20,
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "4286829e-cb76-4c8d-a76b-932c23b71d8d",
-            "name": "Room1",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room1.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "2a0fa7fc-7c21-4484-bf86-79a4de5cfeec",
-            "name": "Room10",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room10.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "a3ad666c-f74c-496a-ad31-91ff8d56b976",
-            "name": "Room11",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room11.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "39774600-9f2f-4959-a499-b2e65a25d880",
-            "name": "Room12",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room12.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "86d9a995-8fd4-488b-8c2e-2edccef9ad53",
-            "name": "Room13",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room13.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "62f62e44-6d4b-43ff-9fb5-15c942914816",
-            "name": "Room14",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room14.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "f8987c61-ea7e-4c5b-a537-05163fc5b778",
-            "name": "Room15",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room15.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "d49e9e17-8a9e-4a98-bf25-c7633d49c4ba",
-            "name": "Room16",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room16.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "9467a840-ab34-4261-b359-85941b91934f",
-            "name": "Room2",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room2.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "d7105c2a-cbe9-4043-b168-55909ba359b9",
-            "name": "Room3",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room3.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "37d21afe-6ed8-4fe5-9331-1712d6f84618",
-            "name": "Room4",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room4.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "b10c05de-1d00-46af-af7c-46a099c737ca",
-            "name": "Room5",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room5.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "fcc773f2-17ff-4c54-af6b-909c49116ee2",
-            "name": "Room6",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room6.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "b7471259-e7d4-47f2-9e12-8eab3e9031a7",
-            "name": "Room7",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room7.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "b998fb1c-c0a4-4023-ae9d-17f24c0622ee",
-            "name": "Room8",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room8.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "cd8eda99-6644-414d-9c99-8310c50a7386",
-            "name": "Room9",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Room9.png",
-            "_v": 1580090803025
+            "filename": "GB_Logo_Siricutico.png",
+            "_v": 1580159386298
         },
         {
             "id": "8fb38d8d-045d-4e2f-b39b-b7b920fe1978",
@@ -20078,7 +19921,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "historia.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "5348ced2-3e1c-4949-9e17-9a45ad567ce2",
@@ -20088,7 +19931,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "cac5c4db-41e3-4c1d-b1c9-2a3db55ba919",
@@ -20098,7 +19941,187 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
+        },
+        {
+            "id": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
+            "name": "Room",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "4286829e-cb76-4c8d-a76b-932c23b71d8d",
+            "name": "Room1",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room1.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "2a0fa7fc-7c21-4484-bf86-79a4de5cfeec",
+            "name": "Room10",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room10.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "a3ad666c-f74c-496a-ad31-91ff8d56b976",
+            "name": "Room11",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room11.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "39774600-9f2f-4959-a499-b2e65a25d880",
+            "name": "Room12",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room12.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "86d9a995-8fd4-488b-8c2e-2edccef9ad53",
+            "name": "Room13",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room13.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "62f62e44-6d4b-43ff-9fb5-15c942914816",
+            "name": "Room14",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room14.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "f8987c61-ea7e-4c5b-a537-05163fc5b778",
+            "name": "Room15",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room15.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "d49e9e17-8a9e-4a98-bf25-c7633d49c4ba",
+            "name": "Room16",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room16.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "9467a840-ab34-4261-b359-85941b91934f",
+            "name": "Room2",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room2.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "d7105c2a-cbe9-4043-b168-55909ba359b9",
+            "name": "Room3",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room3.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "37d21afe-6ed8-4fe5-9331-1712d6f84618",
+            "name": "Room4",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room4.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "b10c05de-1d00-46af-af7c-46a099c737ca",
+            "name": "Room5",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room5.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "fcc773f2-17ff-4c54-af6b-909c49116ee2",
+            "name": "Room6",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room6.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "b7471259-e7d4-47f2-9e12-8eab3e9031a7",
+            "name": "Room7",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room7.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "b998fb1c-c0a4-4023-ae9d-17f24c0622ee",
+            "name": "Room8",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room8.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "cd8eda99-6644-414d-9c99-8310c50a7386",
+            "name": "Room9",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room9.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "c26a0501-3b99-46d9-9925-05705a414d58",
+            "name": "Title2",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Title2.png",
+            "_v": 1580159386298
         },
         {
             "id": "70a9d7a0-606e-4f23-91f1-566f3b4bded5",
@@ -20108,73 +20131,17 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         }
     ],
     "spriteSheets": [
-        {
-            "id": "34adcb39-f14d-4a86-9052-f6eee15e0122",
-            "name": "Buraco_16x16",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "Buraco_16x16.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "f61aa8af-0c21-4557-950c-b41e99f490db",
-            "name": "NPC_Aranha",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "NPC_Aranha.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "f2c8c4d4-b4eb-4c5f-822e-4a631f539dc0",
-            "name": "NPC_Lesma",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "NPC_Lesma.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "0d34ed82-a795-4bf1-a461-5b679e096bd6",
-            "name": "NPC_Mosca",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "NPC_Mosca.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "ee6455e3-0bb4-494e-b980-cc8a43d506d6",
-            "name": "NPC_joaninha",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "NPC_joaninha.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "8100cfdd-4deb-4d1a-8aa3-f0a894469493",
-            "name": "Parede_16x16",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "Parede_16x16.png",
-            "_v": 1580090803025
-        },
-        {
-            "id": "70b207e7-05f6-46a8-8426-154683417563",
-            "name": "Rato_parado",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "Rato_parado.png",
-            "_v": 1580090803025
-        },
         {
             "id": "285bc766-d9a0-450b-bd11-bd56722a571c",
             "name": "a",
             "numFrames": 1,
             "type": "static",
             "filename": "a.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -20182,7 +20149,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -20190,7 +20157,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "3d0081eb-edc9-4902-b506-9fb93adba5d6",
@@ -20198,7 +20165,7 @@
             "numFrames": 25,
             "type": "animated",
             "filename": "alphabet-1.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "e7e1d9d5-c762-4416-8cb9-5d0746da7c09",
@@ -20206,7 +20173,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "b.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "524499c3-b44a-40d4-9f0a-f4fb60b45a74",
@@ -20214,7 +20181,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "barata_16x16.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
+        },
+        {
+            "id": "34adcb39-f14d-4a86-9052-f6eee15e0122",
+            "name": "Buraco_16x16",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Buraco_16x16.png",
+            "_v": 1580159386298
         },
         {
             "id": "2e4fa395-5fa4-4963-bcba-e70334124474",
@@ -20222,7 +20197,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "c.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "066d584f-17e4-4e3e-8881-ed2ab7b74a63",
@@ -20230,7 +20205,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "chave.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "4723a920-0be4-46d3-ba83-d1ec1540fef9",
@@ -20238,7 +20213,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cientista_pro_dialogo.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "4e93ef72-5294-44d3-953f-84bfce0eea49",
@@ -20246,7 +20221,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "credits.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -20254,7 +20229,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "doors.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "d47c6077-035a-4abb-a40e-ab2fbf144f0a",
@@ -20262,7 +20237,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "e.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "ed6b8755-9771-4dff-b4bb-18ec69b22e53",
@@ -20270,7 +20245,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "i.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "3b85d30d-eeea-4495-8b5e-0b19c7ff6cd5",
@@ -20278,7 +20253,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "m.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
@@ -20286,7 +20261,39 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "morcego_16x16.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
+        },
+        {
+            "id": "f61aa8af-0c21-4557-950c-b41e99f490db",
+            "name": "NPC_Aranha",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "NPC_Aranha.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "ee6455e3-0bb4-494e-b980-cc8a43d506d6",
+            "name": "NPC_joaninha",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "NPC_joaninha.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "f2c8c4d4-b4eb-4c5f-822e-4a631f539dc0",
+            "name": "NPC_Lesma",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "NPC_Lesma.png",
+            "_v": 1580159386298
+        },
+        {
+            "id": "0d34ed82-a795-4bf1-a461-5b679e096bd6",
+            "name": "NPC_Mosca",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "NPC_Mosca.png",
+            "_v": 1580159386298
         },
         {
             "id": "91581f70-b831-40de-b454-09594827884e",
@@ -20294,7 +20301,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "o.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "ed2fff22-b3cc-4a5d-bef6-4b0c2837460e",
@@ -20302,7 +20309,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "paper.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
+        },
+        {
+            "id": "8100cfdd-4deb-4d1a-8aa3-f0a894469493",
+            "name": "Parede_16x16",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Parede_16x16.png",
+            "_v": 1580159386298
         },
         {
             "id": "a9bb9b11-ef78-4de5-9544-7dbdad820787",
@@ -20310,7 +20325,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "porta_aberta_16x16.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "d64579dd-9176-4adb-95b6-9d62507a86f1",
@@ -20318,7 +20333,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "porta_fechada_16x16.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "0e2bd949-8dac-4490-8137-04becf4e5e89",
@@ -20326,7 +20341,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "porta_final.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "6e50b6a0-3711-4075-8f2e-f040f8c4e0c2",
@@ -20334,7 +20349,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "porta_final_aberta..png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "cc3f4208-b6fd-48f8-b448-b2fb2c115aa6",
@@ -20342,7 +20357,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "quina_16x16.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "59f349a2-7e07-4d11-8234-1a3cddac9258",
@@ -20350,7 +20365,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "r.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "a204c861-ad04-41a1-9f2e-d7eec1cd8388",
@@ -20358,7 +20373,15 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "rato_animacao.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
+        },
+        {
+            "id": "70b207e7-05f6-46a8-8426-154683417563",
+            "name": "Rato_parado",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "Rato_parado.png",
+            "_v": 1580159386298
         },
         {
             "id": "41695a0b-45f5-4220-b9e6-81e9d197d3cc",
@@ -20366,7 +20389,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "selector.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -20374,7 +20397,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "fb8a29a6-2813-46bf-9bac-c7d2a200d7ec",
@@ -20382,45 +20405,51 @@
             "numFrames": 1,
             "type": "static",
             "filename": "trinity.png",
-            "_v": 1580090803025
+            "_v": 1580159386298
         }
     ],
     "music": [
         {
+            "id": "caf056fa-0478-4683-864d-21b466faf939",
+            "name": "Title",
+            "filename": "Title.mod",
+            "_v": 1580159386298
+        },
+        {
             "id": "f63beeb0-7575-4847-931a-fded6168341e",
             "name": "abriu2",
             "filename": "abriu2.mod",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "8fbe1150-2673-44bf-a1c0-6b66a171aeeb",
             "name": "acertou2",
             "filename": "acertou2.mod",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
             "name": "errou2",
             "filename": "errou2.mod",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "23fbf33d-cc50-47f6-9552-45c6611a24d2",
             "name": "gameplay2",
             "filename": "gameplay2.mod",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "2430f89b-b915-4dbe-927c-20656f06b9f8",
             "name": "historia",
             "filename": "historia.mod",
-            "_v": 1580090803025
+            "_v": 1580159386298
         },
         {
             "id": "0ff8e84b-2680-4ed5-ae77-22f7e00bdc02",
             "name": "letra2",
             "filename": "letra2.mod",
-            "_v": 1580090803025
+            "_v": 1580159386298
         }
     ],
     "customEvents": []
