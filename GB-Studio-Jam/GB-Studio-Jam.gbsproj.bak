@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 401,
-        "worldScrollY": 642,
+        "worldScrollX": 254,
+        "worldScrollY": 0,
         "zoom": 125,
         "customColorsWhite": "E2F8C6",
         "customColorsLight": "7FEB54",
@@ -40,6 +40,16 @@
                     }
                 },
                 {
+                    "id": "98b27570-fabc-4372-9b6f-403ee056ce65",
+                    "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "a"
+                        ],
+                        "__collapse": true
+                    }
+                },
+                {
                     "id": "8d984f60-d442-4307-bfc2-46e2c123f9bd",
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
@@ -52,7 +62,7 @@
                     "command": "EVENT_SET_INPUT_SCRIPT",
                     "args": {
                         "input": "start",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -19367,9 +19377,12 @@
                     }
                 },
                 {
-                    "id": "d4a47e0e-6ed9-40f8-a780-eb82e8878ebd",
-                    "command": "EVENT_MUSIC_STOP",
-                    "args": {}
+                    "id": "e76413fa-c4d5-4886-8cf2-a3d1f6915947",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "b1f42317-9cc1-4124-919b-a8c118391dc8",
+                        "loop": false
+                    }
                 },
                 {
                     "id": "c45e8c53-1766-4c0f-85dd-ce330d2f3504",
@@ -19411,11 +19424,6 @@
             "actors": [],
             "triggers": [],
             "script": [
-                {
-                    "id": "6d1632a3-d149-4104-a1fc-dc2592d43647",
-                    "command": "EVENT_MUSIC_STOP",
-                    "args": {}
-                },
                 {
                     "id": "436c9880-af2d-4c39-a1ab-0e33c42c3e91",
                     "command": "EVENT_MUSIC_PLAY",
@@ -19502,7 +19510,7 @@
                     "id": "5e875c58-8f5f-4e59-91b0-3e38e233f047",
                     "command": "EVENT_SWITCH_SCENE",
                     "args": {
-                        "sceneId": "1bdaccca-09f2-4f33-a52b-9c8d2e893e8e",
+                        "sceneId": "b0844902-8874-4a51-b86c-a212dd4e6444",
                         "x": 0,
                         "y": 0,
                         "direction": "up",
@@ -19746,7 +19754,7 @@
                                     "sceneId": "1bdaccca-09f2-4f33-a52b-9c8d2e893e8e",
                                     "x": 0,
                                     "y": 0,
-                                    "direction": "",
+                                    "direction": "left",
                                     "fadeSpeed": "2"
                                 }
                             },
@@ -20440,6 +20448,12 @@
         }
     ],
     "music": [
+        {
+            "id": "b1f42317-9cc1-4124-919b-a8c118391dc8",
+            "name": "GameOver",
+            "filename": "GameOver.mod",
+            "_v": 1580170027210
+        },
         {
             "id": "aa9575cb-f8ae-4278-b394-f697cb079d15",
             "name": "Title(F04)",

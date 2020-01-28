@@ -2,7 +2,7 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 401,
+        "worldScrollX": 254,
         "worldScrollY": 0,
         "zoom": 125,
         "customColorsWhite": "E2F8C6",
@@ -19377,9 +19377,12 @@
                     }
                 },
                 {
-                    "id": "d4a47e0e-6ed9-40f8-a780-eb82e8878ebd",
-                    "command": "EVENT_MUSIC_STOP",
-                    "args": {}
+                    "id": "e76413fa-c4d5-4886-8cf2-a3d1f6915947",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "b1f42317-9cc1-4124-919b-a8c118391dc8",
+                        "loop": false
+                    }
                 },
                 {
                     "id": "c45e8c53-1766-4c0f-85dd-ce330d2f3504",
@@ -19421,11 +19424,6 @@
             "actors": [],
             "triggers": [],
             "script": [
-                {
-                    "id": "6d1632a3-d149-4104-a1fc-dc2592d43647",
-                    "command": "EVENT_MUSIC_STOP",
-                    "args": {}
-                },
                 {
                     "id": "436c9880-af2d-4c39-a1ab-0e33c42c3e91",
                     "command": "EVENT_MUSIC_PLAY",
@@ -20450,6 +20448,12 @@
         }
     ],
     "music": [
+        {
+            "id": "b1f42317-9cc1-4124-919b-a8c118391dc8",
+            "name": "GameOver",
+            "filename": "GameOver.mod",
+            "_v": 1580170027210
+        },
         {
             "id": "aa9575cb-f8ae-4278-b394-f697cb079d15",
             "name": "Title(F04)",
