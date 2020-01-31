@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1715,
-        "worldScrollY": 545,
+        "worldScrollX": 635,
+        "worldScrollY": 1883,
         "zoom": 275,
         "customColorsWhite": "E2F8C6",
         "customColorsLight": "7FEB54",
@@ -16980,7 +16980,7 @@
                             "args": {
                                 "variable": "14",
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -28205,7 +28205,7 @@
                             "args": {
                                 "variable": "14",
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -28468,7 +28468,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Talvez essa chave\najude em aguma\ncharada..."
+                                    "Talvez essa chave\najude em alguma\ncharada..."
                                 ],
                                 "avatarId": ""
                             }
@@ -28476,7 +28476,9 @@
                         {
                             "id": "f09b4928-7aa0-4469-ba7e-467b904c68df",
                             "command": "EVENT_TIMER_RESTART",
-                            "args": {},
+                            "args": {
+                                "__collapse": false
+                            },
                             "__type": "event"
                         },
                         {
@@ -39828,12 +39830,12 @@
                     "args": {
                         "text": [
                             "Experiência\nconcluída com\nêxito!",
-                            "Os ratos\nrealmente são\nmais inteligente",
+                            "Os ratos\nrealmente são\nmais inteligentes",
                             "que os seres\nhumanos.",
                             "Essa descoberta\nmudará os rumos\nda ciência!"
                         ],
                         "avatarId": "",
-                        "__collapse": true
+                        "__collapse": false
                     }
                 },
                 {
@@ -39845,7 +39847,7 @@
                             "mas um grande\npasso para a\nhumanidade."
                         ],
                         "avatarId": "",
-                        "__collapse": true
+                        "__collapse": false
                     }
                 },
                 {
@@ -40082,7 +40084,7 @@
                             "nós somos mais\ninteligentes que\neles."
                         ],
                         "avatarId": "",
-                        "__collapse": true
+                        "__collapse": false
                     }
                 },
                 {
@@ -40093,7 +40095,7 @@
                             "Elementar, meu\ncaro Ratson!"
                         ],
                         "avatarId": "",
-                        "__collapse": true
+                        "__collapse": false
                     }
                 },
                 {
@@ -40728,7 +40730,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "conquista_Cerebro.png",
-            "_v": 1580442387837
+            "_v": 1580443207726
         },
         {
             "id": "41e60d75-c449-47d3-8137-bdd525c57177",
@@ -40738,7 +40740,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "conquista_Danger_Mouse.png",
-            "_v": 1580442387829
+            "_v": 1580443207726
         },
         {
             "id": "4b23947a-1c55-4b59-97fd-4a5c7581bafa",
@@ -40748,7 +40750,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "conquista_ligeirinho.png",
-            "_v": 1580442387847
+            "_v": 1580443207726
         },
         {
             "id": "0801a0bb-113a-448d-afe9-57feb1d962f9",
@@ -40758,7 +40760,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Fim_1.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "0ec28554-d4c7-42de-8b1c-3fb7fe093a18",
@@ -40768,7 +40770,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Fim_2.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "17698fa0-22e9-4f59-8913-8f197c210dd0",
@@ -40778,7 +40780,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Fim_3.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "5d32f964-19fd-4ac1-baf0-c44c4a75a88f",
@@ -40788,7 +40790,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Game_Over.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "9f49c51d-755d-47f1-8f2e-19a020b7079a",
@@ -40798,7 +40800,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "GB_Logo_Siricutico.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "8fb38d8d-045d-4e2f-b39b-b7b920fe1978",
@@ -40808,7 +40810,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "historia.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "5348ced2-3e1c-4949-9e17-9a45ad567ce2",
@@ -40818,7 +40820,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "_v": 1580432801105
+            "_v": 1580443207727
         },
         {
             "id": "cac5c4db-41e3-4c1d-b1c9-2a3db55ba919",
@@ -40828,7 +40830,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1580432801105
+            "_v": 1580443207727
         },
         {
             "id": "7abe7cea-f45f-424f-a758-4c4fc49cb440",
@@ -40838,7 +40840,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room.png",
-            "_v": 1580432801105
+            "_v": 1580443207727
         },
         {
             "id": "4286829e-cb76-4c8d-a76b-932c23b71d8d",
@@ -40848,7 +40850,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room1.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "2a0fa7fc-7c21-4484-bf86-79a4de5cfeec",
@@ -40858,7 +40860,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room10.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "a3ad666c-f74c-496a-ad31-91ff8d56b976",
@@ -40868,7 +40870,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room11.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "39774600-9f2f-4959-a499-b2e65a25d880",
@@ -40878,7 +40880,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room12.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "86d9a995-8fd4-488b-8c2e-2edccef9ad53",
@@ -40888,7 +40890,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room13.png",
-            "_v": 1580435948813
+            "_v": 1580443207726
         },
         {
             "id": "62f62e44-6d4b-43ff-9fb5-15c942914816",
@@ -40898,7 +40900,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room14.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "f8987c61-ea7e-4c5b-a537-05163fc5b778",
@@ -40908,7 +40910,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room15.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "d49e9e17-8a9e-4a98-bf25-c7633d49c4ba",
@@ -40918,7 +40920,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room16.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "9467a840-ab34-4261-b359-85941b91934f",
@@ -40928,7 +40930,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room2.png",
-            "_v": 1580432801105
+            "_v": 1580443207726
         },
         {
             "id": "d7105c2a-cbe9-4043-b168-55909ba359b9",
@@ -40938,7 +40940,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room3.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "37d21afe-6ed8-4fe5-9331-1712d6f84618",
@@ -40948,7 +40950,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room4.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "b10c05de-1d00-46af-af7c-46a099c737ca",
@@ -40958,7 +40960,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room5.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "fcc773f2-17ff-4c54-af6b-909c49116ee2",
@@ -40968,7 +40970,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room6.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "b7471259-e7d4-47f2-9e12-8eab3e9031a7",
@@ -40978,7 +40980,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room7.png",
-            "_v": 1580440257635
+            "_v": 1580443207726
         },
         {
             "id": "b998fb1c-c0a4-4023-ae9d-17f24c0622ee",
@@ -40988,7 +40990,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room8.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "cd8eda99-6644-414d-9c99-8310c50a7386",
@@ -40998,7 +41000,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room9.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "c26a0501-3b99-46d9-9925-05705a414d58",
@@ -41008,7 +41010,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Title2.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "70a9d7a0-606e-4f23-91f1-566f3b4bded5",
@@ -41018,7 +41020,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         }
     ],
     "spriteSheets": [
@@ -41028,7 +41030,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "a.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -41036,7 +41038,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -41044,7 +41046,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "3d0081eb-edc9-4902-b506-9fb93adba5d6",
@@ -41052,7 +41054,7 @@
             "numFrames": 25,
             "type": "animated",
             "filename": "alphabet-1.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "e7e1d9d5-c762-4416-8cb9-5d0746da7c09",
@@ -41060,7 +41062,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "b.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "524499c3-b44a-40d4-9f0a-f4fb60b45a74",
@@ -41068,7 +41070,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "barata_16x16.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "34adcb39-f14d-4a86-9052-f6eee15e0122",
@@ -41076,7 +41078,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Buraco_16x16.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "2e4fa395-5fa4-4963-bcba-e70334124474",
@@ -41084,7 +41086,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "c.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "066d584f-17e4-4e3e-8881-ed2ab7b74a63",
@@ -41092,7 +41094,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "chave.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "4723a920-0be4-46d3-ba83-d1ec1540fef9",
@@ -41100,7 +41102,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cientista_pro_dialogo.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "4e93ef72-5294-44d3-953f-84bfce0eea49",
@@ -41108,7 +41110,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "credits.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "e4a6402b-f06b-41fb-aba2-2c29a699ea62",
@@ -41116,7 +41118,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "doors.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "d47c6077-035a-4abb-a40e-ab2fbf144f0a",
@@ -41124,7 +41126,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "e.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "ed6b8755-9771-4dff-b4bb-18ec69b22e53",
@@ -41132,7 +41134,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "i.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "3b85d30d-eeea-4495-8b5e-0b19c7ff6cd5",
@@ -41140,7 +41142,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "m.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "f6864e4d-c386-4de8-ad41-d1096756ddb3",
@@ -41148,7 +41150,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "morcego_16x16.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "5d2c4007-b748-4461-b430-aa2e35a7ff75",
@@ -41156,7 +41158,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "none.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "f61aa8af-0c21-4557-950c-b41e99f490db",
@@ -41164,7 +41166,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "NPC_Aranha.png",
-            "_v": 1580432801107
+            "_v": 1580443207726
         },
         {
             "id": "ee6455e3-0bb4-494e-b980-cc8a43d506d6",
@@ -41172,7 +41174,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "NPC_joaninha.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "f2c8c4d4-b4eb-4c5f-822e-4a631f539dc0",
@@ -41180,7 +41182,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "NPC_Lesma.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "0d34ed82-a795-4bf1-a461-5b679e096bd6",
@@ -41188,7 +41190,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "NPC_Mosca.png",
-            "_v": 1580432801107
+            "_v": 1580443207726
         },
         {
             "id": "91581f70-b831-40de-b454-09594827884e",
@@ -41196,7 +41198,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "o.png",
-            "_v": 1580432801106
+            "_v": 1580443207726
         },
         {
             "id": "ed2fff22-b3cc-4a5d-bef6-4b0c2837460e",
@@ -41204,7 +41206,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "paper.png",
-            "_v": 1580432801106
+            "_v": 1580443207727
         },
         {
             "id": "8100cfdd-4deb-4d1a-8aa3-f0a894469493",
@@ -41212,7 +41214,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Parede_16x16.png",
-            "_v": 1580432801106
+            "_v": 1580443207727
         },
         {
             "id": "a9bb9b11-ef78-4de5-9544-7dbdad820787",
@@ -41220,7 +41222,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "porta_aberta_16x16.png",
-            "_v": 1580432801106
+            "_v": 1580443207727
         },
         {
             "id": "d64579dd-9176-4adb-95b6-9d62507a86f1",
@@ -41228,7 +41230,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "porta_fechada_16x16.png",
-            "_v": 1580432801106
+            "_v": 1580443207727
         },
         {
             "id": "0e2bd949-8dac-4490-8137-04becf4e5e89",
@@ -41236,7 +41238,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "porta_final.png",
-            "_v": 1580432801106
+            "_v": 1580443207727
         },
         {
             "id": "6e50b6a0-3711-4075-8f2e-f040f8c4e0c2",
@@ -41244,7 +41246,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "porta_final_aberta..png",
-            "_v": 1580432801106
+            "_v": 1580443207727
         },
         {
             "id": "cc3f4208-b6fd-48f8-b448-b2fb2c115aa6",
@@ -41252,7 +41254,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "quina_16x16.png",
-            "_v": 1580432801106
+            "_v": 1580443207727
         },
         {
             "id": "59f349a2-7e07-4d11-8234-1a3cddac9258",
@@ -41260,7 +41262,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "r.png",
-            "_v": 1580432801106
+            "_v": 1580443207727
         },
         {
             "id": "a204c861-ad04-41a1-9f2e-d7eec1cd8388",
@@ -41268,7 +41270,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "rato_animacao.png",
-            "_v": 1580432801107
+            "_v": 1580443207727
         },
         {
             "id": "70b207e7-05f6-46a8-8426-154683417563",
@@ -41276,7 +41278,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "Rato_parado.png",
-            "_v": 1580432801107
+            "_v": 1580443207727
         },
         {
             "id": "41695a0b-45f5-4220-b9e6-81e9d197d3cc",
@@ -41284,7 +41286,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "selector.png",
-            "_v": 1580432801107
+            "_v": 1580443207727
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -41292,7 +41294,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1580432801107
+            "_v": 1580443207727
         },
         {
             "id": "fb8a29a6-2813-46bf-9bac-c7d2a200d7ec",
@@ -41300,7 +41302,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "trinity.png",
-            "_v": 1580432801107
+            "_v": 1580443207727
         }
     ],
     "music": [
@@ -41308,67 +41310,67 @@
             "id": "f63beeb0-7575-4847-931a-fded6168341e",
             "name": "abriu2",
             "filename": "abriu2.mod",
-            "_v": 1580432801089
+            "_v": 1580443207723
         },
         {
             "id": "8fbe1150-2673-44bf-a1c0-6b66a171aeeb",
             "name": "acertou2",
             "filename": "acertou2.mod",
-            "_v": 1580432801089
+            "_v": 1580443207723
         },
         {
             "id": "fb46bb70-c4f7-47c1-bfe2-24c59fbd4b4d",
             "name": "errou2",
             "filename": "errou2.mod",
-            "_v": 1580432801089
+            "_v": 1580443207723
         },
         {
             "id": "b1f42317-9cc1-4124-919b-a8c118391dc8",
             "name": "GameOver",
             "filename": "GameOver.mod",
-            "_v": 1580432801089
+            "_v": 1580443207723
         },
         {
             "id": "23fbf33d-cc50-47f6-9552-45c6611a24d2",
             "name": "gameplay2",
             "filename": "gameplay2.mod",
-            "_v": 1580432801089
+            "_v": 1580443207723
         },
         {
             "id": "2430f89b-b915-4dbe-927c-20656f06b9f8",
             "name": "historia",
             "filename": "historia.mod",
-            "_v": 1580432801089
+            "_v": 1580443207723
         },
         {
             "id": "17dd21e0-0095-4337-9619-79197b3f5032",
             "name": "historia(F05)",
             "filename": "historia(F05).mod",
-            "_v": 1580432801089
+            "_v": 1580443207723
         },
         {
             "id": "0ff8e84b-2680-4ed5-ae77-22f7e00bdc02",
             "name": "letra2",
             "filename": "letra2.mod",
-            "_v": 1580432801089
+            "_v": 1580443207723
         },
         {
             "id": "caf056fa-0478-4683-864d-21b466faf939",
             "name": "Title",
             "filename": "Title.mod",
-            "_v": 1580432801089
+            "_v": 1580443207723
         },
         {
             "id": "aa9575cb-f8ae-4278-b394-f697cb079d15",
             "name": "Title(F04)",
             "filename": "Title(F04).mod",
-            "_v": 1580432801089
+            "_v": 1580443207723
         },
         {
             "id": "c173b684-8fac-4cdf-87e5-87caee3551d7",
             "name": "Title5",
             "filename": "Title5.mod",
-            "_v": 1580432801089
+            "_v": 1580443207723
         }
     ],
     "customEvents": []
